@@ -1,0 +1,28 @@
+// Usar archivos parciales desde sus respectivas carpetas
+@use 'base/colores';
+@use 'base/tipografia';
+
+@use 'abstracts/mixins';
+@use 'abstracts/breakpoints';
+
+@use 'layout/grid';
+@use 'layout/flexbox';
+
+@use 'componentes/botones';
+@use 'componentes/formularios';
+@use 'componentes/tarjetas';
+@use 'componentes/alertas';
+@use 'componentes/nav-bar';
+@use 'componentes/badges';
+@use 'componentes/contenedores';
+
+@use 'utilidades/textos';
+@use 'utilidades/sombras';
+@use 'utilidades/espaciado';
+@use 'utilidades/posicion';
+@use 'utilidades/bordes-redondeados';
+@use 'utilidades/visibilidad';
+@use 'utilidades/fondo';
+
+@use 'responsive/media-queries';
+

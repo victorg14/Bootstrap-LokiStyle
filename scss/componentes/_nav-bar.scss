@@ -1,0 +1,85 @@
+@use '../base/colores';
+@use '../base/tipografia';
+@use 'sass:color';
+
+// Estructura base del navbar
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: tipografia.$font-midgard;
+}
+
+// Estilos generales de enlaces de navegación
+.navbar a {
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Navbar estándar con fondo Loki (verde oliva)
+.navbar-gloriosa {
+  @extend .navbar;
+  background-color: colores.$verde-loki;
+  color: colores.$white;
+
+  a {
+    color: colores.$white;
+
+    &:hover {
+      color: color.adjust(colores.$dorado-loki, $lightness: 10%);
+    }
+  }
+}
+
+// Navbar oscuro
+.navbar-oscura {
+  @extend .navbar;
+  background-color: colores.$carbon;
+  color: colores.$white;
+
+  a {
+    color: colores.$white;
+
+    &:hover {
+      color: colores.$dorado-loki;
+    }
+  }
+}
+
+// Navbar dorada
+.navbar-dorada {
+  @extend .navbar;
+  background-color: colores.$dorado-loki;
+  color: colores.$black;
+
+  a {
+    color: colores.$black;
+
+    &:hover {
+      color: color.adjust(colores.$verde-loki, $lightness: -10%);
+    }
+  }
+}
+
+// Navbar mágica (morado)
+.navbar-magica {
+  @extend .navbar;
+  background-color: colores.$morado-magico;
+  color: colores.$white;
+
+  a {
+    color: colores.$white;
+
+    &:hover {
+      color: colores.$dorado-suave;
+    }
+  }
+}

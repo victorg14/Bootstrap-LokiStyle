@@ -1,0 +1,86 @@
+@use 'sass:color';
+@use '../base/tipografia';
+@use '../base/colores';
+
+// Estilo base para todos los botones
+.btn-loki {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: tipografia.$font-midgard;
+
+  &:hover {
+    transform: translateY(-2px); // efecto flotante al pasar el mouse
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+// Botón principal - Verde Loki (marca)
+.btn-glorioso {
+  @extend .btn-loki;
+  background-color: colores.$verde-loki;
+  color: colores.$white;
+
+  &:hover {
+    background-color: color.adjust(colores.$verde-loki, $lightness: -10%);
+  }
+}
+
+// Botón de acento - Dorado clásico
+.btn-dorado {
+  @extend .btn-loki;
+  background-color: colores.$dorado-loki;
+  color: colores.$black;
+
+  &:hover {
+    background-color: color.adjust(colores.$dorado-loki, $lightness: -10%);
+  }
+}
+
+// Botón oscuro - Misterioso, estilo sigiloso
+.btn-oscuro {
+  @extend .btn-loki;
+  background-color: colores.$gris-oscuro;
+  color: colores.$white;
+
+  &:hover {
+    background-color: color.adjust(colores.$gris-oscuro, $lightness: 10%);
+  }
+}
+
+// Botón mágico - Para acciones especiales
+.btn-magico {
+  @extend .btn-loki;
+  background-color: colores.$morado-magico;
+  color: colores.$white;
+
+  &:hover {
+    background-color: color.adjust(colores.$morado-magico, $lightness: -10%);
+  }
+}
+
+// Tamaños de botón
+.btn-p {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.btn-m {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.btn-g {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}

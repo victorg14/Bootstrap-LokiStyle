@@ -1,0 +1,9 @@
+// abstracts/_breakpoints.scss
+$breakpoints: (
+  'p': 540px,
+  'm': 768px,
+  'l': 1024px,
+  'g': 960px, // Añadir g para 960px
+  'xg': 1140px // Añadir xg para 1140px
+);
+

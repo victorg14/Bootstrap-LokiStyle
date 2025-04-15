@@ -1,0 +1,66 @@
+
+@use '../base/colores';
+@use '../base/tipografia';
+@use 'sass:color';
+
+// Tarjeta base
+.card-loki {
+  background-color: colores.$white;
+  border: 1px solid colores.$gris-claro;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: tipografia.$font-midgard;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.01); // animación sutil al pasar el mouse
+  }
+}
+
+// Contenido principal dentro de una tarjeta
+.card-header {
+  background-color: colores.$verde-esmeralda;
+  color: colores.$white;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: tipografia.$font-runes;
+}
+
+.card-body {
+  padding: 1rem;
+  color: colores.$carbon;
+}
+
+.card-footer {
+  padding: 0.75rem 1rem;
+  background-color: colores.$blanco-calido;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+// Variantes de tarjeta usando tu paleta
+
+// Tarjeta dorada - Para destacar contenido
+.card-dorada {
+  @extend .card-loki;
+  border-color: colores.$dorado-loki;
+  background-color: color.adjust(colores.$dorado-loki, $lightness: 30%);
+  color: colores.$black;
+}
+
+// Tarjeta oscura - Para estilo sobrio/misterioso
+.card-oscura {
+  @extend .card-loki;
+  background-color: colores.$carbon;
+  color: colores.$white;
+  border: 1px solid colores.$gris-oscuro;
+}
+
+// Tarjeta mágica - Estilo alternativo
+.card-magica {
+  @extend .card-loki;
+  background-color: color.adjust(colores.$morado-magico, $lightness: 10%);
+  color: colores.$white;
+  border: 1px solid colores.$morado-magico;
+}

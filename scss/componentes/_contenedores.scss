@@ -1,0 +1,219 @@
+
+// En contenedores.scss
+@use '../abstracts/mixins' as mixins; 
+@use '../base/colores';
+
+
+// Contenedor base: con ancho máximo en pantallas grandes
+.container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+    // Anchos máximos por breakpoint
+    @include mixins.respond(p) {
+      max-width: 540px;
+      background-color: red;
+    }
+  
+    @include mixins.respond(m) {
+      max-width: 720px;
+      background-color: rgb(126, 180, 203);
+    }
+  
+    @include mixins.respond(g) {
+      max-width: 960px; 
+      background-color: rgb(216, 215, 123);
+    }
+  
+    @include mixins.respond(xg) {
+      max-width: 1140px; 
+      background-color: colores.$verde-loki;
+    }
+  }
+
+  .container-loki-dark {
+    background-color: colores.$carbon;
+    color: colores.$verde-loki;
+    padding: 2rem;
+    border: 2px solid colores.$verde-loki;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+  
+    @include mixins.respond(p) {
+      max-width: 540px;
+    }
+  
+    @include mixins.respond(m) {
+      max-width: 720px;
+    }
+  
+    @include mixins.respond(g) {
+      max-width: 960px;
+    }
+  
+    @include mixins.respond(xg) {
+      max-width: 1140px;
+    }
+  }
+
+  .container-frost {
+    background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(173, 216, 230, 0.5);
+    margin: auto;
+  
+    @include mixins.respond(p) {
+      max-width: 540px;
+    }
+  
+    @include mixins.respond(m) {
+      max-width: 720px;
+    }
+  
+    @include mixins.respond(g) {
+      max-width: 960px;
+    }
+  
+    @include mixins.respond(xg) {
+      max-width: 1140px;
+    }
+  }
+
+  .container-border-glow {
+    padding: 2rem;
+    border: 2px solid colores.$verde-loki;
+    box-shadow: 0 0 10px colores.$verde-loki;
+    border-radius: 0.75rem;
+    margin: auto;
+  
+    @include mixins.respond(p) {
+      max-width: 540px;
+    }
+  
+    @include mixins.respond(m) {
+      max-width: 720px;
+    }
+  
+    @include mixins.respond(g) {
+      max-width: 960px;
+    }
+  
+    @include mixins.respond(xg) {
+      max-width: 1140px;
+    }
+  }
+
+
+  .container-glass {
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  
+    @include mixins.respond(p) {
+      max-width: 540px;
+    }
+  
+    @include mixins.respond(m) {
+      max-width: 720px;
+    }
+  
+    @include mixins.respond(g) {
+      max-width: 960px;
+    }
+  
+    @include mixins.respond(xg) {
+      max-width: 1140px;
+    }
+  }
+
+
+  
+  // Contenedor fluido: siempre 100% ancho del viewport
+  .contenedor-fluid {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  
+
+  .contenedor-completo {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+
+    //posible modificaciones
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    // Fondo por defecto inspirado en Loki
+    background-color: colores.$dorado-suave;
+    color: colores.$carbon;
+  
+    // Breakpoints responsivos
+    @include mixins.respond(p) {
+      padding: 1rem;
+    }
+  
+    @include mixins.respond(m) {
+      padding: 2rem;
+    }
+  
+    @include mixins.respond(g) {
+      padding: 3rem;
+    }
+  
+    @include mixins.respond(xg) {
+      padding: 4rem;
+    }
+  }
+  
+  .contenedor-responsive {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    
+    background-color: colores.$verde-oscuro;     
+    color: colores.$dorado-suave;             
+    border: 1px solid colores.$bronce;           
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);     
+    transition: all 0.3s ease-in-out;
+  
+    // Breakpoints responsivos
+    @include mixins.respond(p) {
+      max-width: 540px;
+      padding: 1rem;
+    }
+  
+    @include mixins.respond(m) {
+      max-width: 720px;
+      padding: 1.5rem;
+    }
+  
+    @include mixins.respond(g) {
+      max-width: 960px;
+      padding: 2rem;
+    }
+  
+    @include mixins.respond(xg) {
+      max-width: 1200px;
+      padding: 2.5rem;
+    }
+  
+    
+  }
+  
+  

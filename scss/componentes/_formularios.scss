@@ -1,0 +1,126 @@
+@use '../base/colores';
+@use '../base/tipografia';
+
+// Estilos generales del formulario
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: colores.$verde-oscuro; // Fondo oscuro para evocar el tema Loki
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: tipografia.$font-midgard; // Tipografía más elegante y mitológica
+  color: colores.$white;
+
+  h2 {
+    color: colores.$dorado-loki;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-family: tipografia.$font-midgard;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+// Estilos de las etiquetas (labels)
+.formulario label {
+  font-size: 1rem;
+  color: colores.$verde-esmeralda;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+// Estilos de los campos de entrada (inputs y selects)
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 1em;
+  font-size: 1.1rem;
+  border: 2px solid colores.$bronce;
+  border-radius: 10px;
+  background-color: colores.$verde-oscuro;
+  color: colores.$white;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+
+  &:focus {
+    border-color: colores.$dorado-loki;
+    background-color: colores.$black;
+  }
+
+  &.filled {
+    background-color: colores.$gris-oscuro;
+  }
+}
+
+// Estilos de los botones
+.formulario button {
+  padding: 1em 2em;
+  font-size: 1.1rem;
+  background-color: colores.$dorado-loki;
+  color: colores.$black;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: tipografia.$font-midgard;
+
+  &:hover {
+    background-color: colores.$dorado-suave;
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: 2px solid colores.$verde-loki;
+  }
+}
+
+// Estilos de los mensajes de error
+.formulario .error {
+  color: colores.$morado-magico;
+  font-size: 0.875rem;
+  margin-top: 0.25em;
+  text-align: center;
+}
+
+// Estilos para textarea
+.formulario textarea {
+  height: 150px;
+  resize: none;
+}
+
+// Estilos para select
+.formulario select {
+  padding: 1em;
+  background-color: colores.$verde-oscuro;
+  border: 2px solid colores.$bronce;
+  color: colores.$white;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  outline: none;
+
+  &:focus {
+    border-color: colores.$dorado-loki;
+    background-color: colores.$black;
+  }
+}
+
+// Contenedor de campos
+.formulario .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+// Campos con borde de bronce
+.formulario .campo-con-borde input,
+.formulario .campo-con-borde select,
+.formulario .campo-con-borde textarea {
+  border-color: colores.$bronce;
+}

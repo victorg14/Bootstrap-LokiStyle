@@ -1,0 +1,82 @@
+@use '../base/colores';
+@use 'sass:color';
+
+// Estilos para los badges
+.badge {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 12px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  // Badge básico (sin color específico)
+  &.predeterminado {
+    background-color: colores.$gris-claro;
+    color: colores.$gris-oscuro;
+  }
+
+  // Badge de éxito (verde Loki)
+  &.exito {
+    background-color: colores.$verde-loki;
+    color: colores.$white;
+  }
+
+  // Badge de advertencia (dorado Loki)
+  &.advertencia {
+    background-color: color.adjust(colores.$dorado-suave, $lightness: 10%);
+    color: colores.$black;
+  }
+
+  // Badge de error (bronce Loki)
+  &.error {
+    background-color: colores.$bronce;
+    color: colores.$white;
+  }
+
+  // Badge de información (azul hielo)
+  &.informacion {
+    background-color: colores.$azul-hielo;
+    color: colores.$white;
+  }
+
+  // Badge con toque mágico (púrpura mágico)
+  &.magico {
+    background-color: color.adjust(colores.$morado-magico, $lightness: 10%);
+    color: colores.$white;
+  }
+
+  // Efecto hover
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  // Badge con contorno (puedes hacer que se vea como un sticker)
+  &.contorno {
+    background-color: transparent;
+    border: 2px solid currentColor;
+    color: colores.$gris-oscuro;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: colores.$gris-oscuro;
+      color: colores.$white;
+    }
+  }
+}
+
+// Variantes de tamaño (opcional)
+.badge-small {
+  font-size: 0.75rem;
+  padding: 0.25em 0.5em;
+}
+
+.badge-large {
+  font-size: 1.25rem;
+  padding: 0.75em 1.5em;
+}

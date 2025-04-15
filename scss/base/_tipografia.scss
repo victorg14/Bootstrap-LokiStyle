@@ -1,0 +1,44 @@
+@use 'colores';
+
+// Tipografías temáticas
+$font-runes: 'Cinzel', serif;          // Para títulos (parece escritura antigua)
+$font-midgard: 'Poppins', sans-serif; // Para texto general
+
+
+body {
+  font-family: $font-midgard;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: colores.$gris-oscuro;
+  background-color: colores.$blanco-calido;
+}
+
+// Títulos 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-runes;
+  color: colores.$verde-oscuro;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+h1 { font-size: 2.5rem; } 
+h2 { font-size: 2rem; }    
+h3 { font-size: 1.75rem; } 
+h4 { font-size: 1.5rem; } 
+h5 { font-size: 1.25rem; } 
+h6 { font-size: 1rem; }    
+
+p {
+  margin-bottom: 1rem;
+  color: colores.$carbon;
+}
+
+// Clases de utilidad con nombres mágicos
+.text-encantado { font-weight: 300; }           
+.text-glorioso { font-weight: bold; }         
+.text-ilucion { font-style: italic; }        
+.text-royal { text-transform: uppercase; }    
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-mistico { letter-spacing: 0.1em; }      

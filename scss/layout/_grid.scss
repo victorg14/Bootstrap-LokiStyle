@@ -1,0 +1,65 @@
+@use 'sass:map';
+@use 'sass:math';
+@use "../abstracts/mixins" as m;
+@use "../abstracts/breakpoints" as b;
+
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  // Dirección horizontal (por defecto)
+  &.fila-horizontal {
+    flex-direction: row;
+  }
+
+  // Dirección vertical (columnas apiladas)
+  &.fila-vertical {
+    flex-direction: column;
+  }
+}
+
+
+
+// Padding para todas las columnas
+[class*="col-"] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+// Columna automática básica
+.col {
+  flex: 1 1 0;
+  max-width: 100%;
+}
+
+// Columnas del 1 al 12 (para móviles por defecto)
+@for $col-num from 1 through 12 {
+  $col-width: math.div($col-num, 12) * 100%;
+  .col-#{$col-num} {
+    flex: 0 0 $col-width;
+    max-width: $col-width;
+  }
+}
+
+// Columnas responsivas por breakpoint
+@each $break-name, $break-value in b.$breakpoints {
+  @include m.respond($break-name) {
+    @for $col-num from 1 through 12 {
+      $col-width: math.div($col-num, 12) * 100%;
+      .col-#{$break-name}-#{$col-num} {
+        flex: 0 0 $col-width;
+        max-width: $col-width;
+      }
+    }
+
+    // Columna automática para breakpoint
+    .col-#{$break-name} {
+      flex: 1 1 0;
+      max-width: 100%;
+    }
+  }
+}
