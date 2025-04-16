@@ -1,0 +1,20 @@
+$border-radius-xs: 0.125rem;   // 2px
+$border-radius-sm: 0.25rem;    // 4px
+$border-radius-md: 0.5rem;     // 8px
+$border-radius-lg: 1rem;       // 16px
+$border-radius-xl: 2rem;       // 32px
+$border-radius-pill: 50rem;    // total (pill shape)
+
+// Clases auxiliares
+.rounded-xs     { border-radius: $border-radius-xs; }
+.rounded-sm     { border-radius: $border-radius-sm; }
+.rounded        { border-radius: $border-radius-md; }
+.rounded-lg     { border-radius: $border-radius-lg; }
+.rounded-xl     { border-radius: $border-radius-xl; }
+.rounded-pill   { border-radius: $border-radius-pill; }
+
+// Bordes por lado (ej. solo arriba, abajo, etc.)
+.rounded-top     { border-top-left-radius: $border-radius-md; border-top-right-radius: $border-radius-md; }
+.rounded-bottom  { border-bottom-left-radius: $border-radius-md; border-bottom-right-radius: $border-radius-md; }
+.rounded-left    { border-top-left-radius: $border-radius-md; border-bottom-left-radius: $border-radius-md; }
+.rounded-right   { border-top-right-radius: $border-radius-md; border-bottom-right-radius: $border-radius-md; }

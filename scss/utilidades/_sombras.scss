@@ -1,0 +1,43 @@
+
+
+.sombra-xs {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sombra-sm {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sombra-md {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sombra-lg {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  }
+  
+  .sombra-xl {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  // Sombra mágica Loki (morado mágico + dorado suave)
+  .sombra-magica {
+    box-shadow:
+      0 4px 12px rgba(108, 52, 131, 0.5),    // morado-magico
+      0 2px 8px rgba(230, 201, 92, 0.3);     // dorado-suave
+  }
+  
+  // Sombra dorada sutil
+  .sombra-dorada {
+    box-shadow: 0 2px 10px rgba(212, 180, 41, 0.4);
+  }
+  
+  // Sombra verde Loki suave
+  .sombra-verde {
+    box-shadow: 0 4px 10px rgba(94, 131, 53, 0.35);
+  }
+  
+  // Sombra profunda oscura (para cards o headers en fondo oscuro)
+  .sombra-oscura {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  }

@@ -9,10 +9,10 @@
   max-width: 500px;
   margin: 0 auto;
   padding: 2em;
-  background-color: colores.$verde-oscuro; // Fondo oscuro para evocar el tema Loki
+  background-color: colores.$verde-oscuro; 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  font-family: tipografia.$font-midgard; // Tipografía más elegante y mitológica
+  font-family: tipografia.$font-midgard; 
   color: colores.$white;
 
   h2 {
@@ -29,7 +29,7 @@
 // Estilos de las etiquetas (labels)
 .formulario label {
   font-size: 1rem;
-  color: colores.$verde-esmeralda;
+  color: colores.$dorado-loki;
   font-weight: bold;
   margin-bottom: 0.5em;
   text-transform: capitalize;

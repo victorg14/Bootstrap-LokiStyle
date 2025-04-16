@@ -1,0 +1,68 @@
+@use '../abstracts/mixins'; // Para los breakpoints
+
+// Clases generales
+.oculto {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+// Visibilidad responsiva (requiere mixins de media queries)
+.oculto-p {
+  @include mixins.respond(p) {
+    display: none !important;
+  }
+}
+
+.oculto-m {
+  @include mixins.respond(m) {
+    display: none !important;
+  }
+}
+
+.oculto-g {
+  @include mixins.respond(g) {
+    display: none !important;
+  }
+}
+
+.oculto-xg {
+  @include mixins.respond(xg) {
+    display: none !important;
+  }
+}
+
+// Mostrar solo en ciertos tamaños
+.solo-p {
+  display: none;
+
+  @include mixins.respond(p) {
+    display: block !important;
+  }
+}
+
+.solo-m {
+  display: none;
+
+  @include mixins.respond(m) {
+    display: block !important;
+  }
+}
+
+.solo-g {
+  display: none;
+
+  @include mixins.respond(g) {
+    display: block !important;
+  }
+}
+
+.solo-xg {
+  display: none;
+
+  @include mixins.respond(xg) {
+    display: block !important;
+  }
+}

@@ -1,0 +1,51 @@
+// Tipos de posicionamiento
+.pos-relativa    { position: relative !important; }
+.pos-absoluta    { position: absolute !important; }
+.pos-fija        { position: fixed !important; }
+.pos-estatica    { position: static !important; }
+.pos-sticky      { position: sticky !important; }
+
+// Coordenadas básicas (en rem para escalabilidad)
+.top-0    { top: 0 !important; }
+.top-1    { top: 1rem !important; }
+.top-2    { top: 2rem !important; }
+
+.bottom-0    { bottom: 0 !important; }
+.bottom-1    { bottom: 1rem !important; }
+.bottom-2    { bottom: 2rem !important; }
+
+.left-0    { left: 0 !important; }
+.left-1    { left: 1rem !important; }
+.left-2    { left: 2rem !important; }
+
+.right-0    { right: 0 !important; }
+.right-1    { right: 1rem !important; }
+.right-2    { right: 2rem !important; }
+
+// Centrados mágicos
+.centro-absoluto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centro-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centro-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Z-index
+.z-0   { z-index: 0 !important; }
+.z-10  { z-index: 10 !important; }
+.z-50  { z-index: 50 !important; }
+.z-100 { z-index: 100 !important; }
+.z-auto { z-index: auto !important; }
+

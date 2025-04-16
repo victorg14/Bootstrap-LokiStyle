@@ -1,0 +1,24 @@
+@use '../base/colores';
+
+// Fondos principales Loki
+.fondo-verde-loki       { background-color: colores.$verde-loki !important; }
+.fondo-verde-esmeralda  { background-color: colores.$verde-esmeralda !important; }
+.fondo-verde-oscuro     { background-color: colores.$verde-oscuro !important; }
+
+.fondo-dorado-loki      { background-color: colores.$dorado-loki !important; }
+.fondo-dorado-suave     { background-color: colores.$dorado-suave !important; }
+.fondo-bronce           { background-color: colores.$bronce !important; }
+
+// Fondos oscuros y neutros
+.fondo-carbon           { background-color: colores.$carbon !important; }
+.fondo-gris-oscuro      { background-color: colores.$gris-oscuro !important; }
+.fondo-negro            { background-color: colores.$black !important; }
+.fondo-blanco           { background-color: colores.$white !important; }
+.fondo-blanco-calido    { background-color: colores.$blanco-calido !important; }
+
+// Fondos mágicos y opcionales
+.fondo-morado-magico    { background-color: colores.$morado-magico !important; }
+.fondo-azul-hielo       { background-color: colores.$azul-hielo !important; }
+
+// Fondos suaves y de soporte
+.fondo-gris-claro       { background-color: colores.$gris-claro !important; }

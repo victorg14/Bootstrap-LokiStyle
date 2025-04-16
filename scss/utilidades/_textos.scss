@@ -1,0 +1,40 @@
+@use '../base/colores';
+@use '../base/tipografia';
+
+// Tamaños de texto
+.texto-xs     { font-size: 0.75rem; }  // 12px
+.texto-sm     { font-size: 0.875rem; } // 14px
+.texto-md     { font-size: 1rem; }     // 16px (base)
+.texto-lg     { font-size: 1.25rem; }  // 20px
+.texto-xl     { font-size: 1.5rem; }   // 24px
+.texto-xxl    { font-size: 2rem; }     // 32px
+
+// Pesos (grosor de fuente)
+.fuente-light   { font-weight: 300; }
+.fuente-normal  { font-weight: 400; }
+.fuente-medium  { font-weight: 500; }
+.fuente-bold    { font-weight: 700; }
+
+// Colores de texto (basados en la paleta Loki)
+.texto-verde         { color: colores.$verde-loki; }
+.texto-verde-oscuro  { color: colores.$verde-oscuro; }
+.texto-dorado        { color: colores.$dorado-loki; }
+.texto-dorado-suave  { color: colores.$dorado-suave; }
+.texto-bronce        { color: colores.$bronce; }
+.texto-magico        { color: colores.$morado-magico; }
+.texto-carbon        { color: colores.$carbon; }
+.texto-blanco        { color: colores.$white; }
+.texto-negro         { color: colores.$black; }
+.texto-gris          { color: colores.$gris-oscuro; }
+
+// Transformaciones y alineación
+.texto-mayusculas  { text-transform: uppercase; }
+.texto-minusculas  { text-transform: lowercase; }
+.texto-capital     { text-transform: capitalize; }
+
+.texto-centro      { text-align: center; }
+.texto-izquierda   { text-align: left; }
+.texto-derecha     { text-align: right; }
+
+// Tipografías (si defines más en tipografia.scss)
+.fuente-midgard   { font-family: tipografia.$font-midgard; }
