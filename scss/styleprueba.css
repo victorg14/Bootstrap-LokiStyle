@@ -826,10 +826,27 @@ p {
   display: block;
 }
 
+/*
+
 .logo-loki {
   font-size: 1.25rem;
   font-weight: bold;
   white-space: nowrap;
+}
+*/
+.logo-loki {
+  font-size: 1.25rem;
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-loki img {
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -840,10 +857,35 @@ p {
   padding: 0;
 }
 
+/*
+.search-box {
+  input {
+
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #396c2a;
+  }
+}
+
+*/
 .search-box input {
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  width: 250px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid #396c2a;
+  background-color: #ffffff;
+  color: #5E8335;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.search-box input::placeholder {
+  color: rgb(143.3804347826, 189.2684782609, 92.5315217391);
+}
+.search-box input:focus {
+  outline: none;
+  border-color: #D4B429;
+  box-shadow: 0 0 0 4px rgba(212, 180, 41, 0.5);
 }
 
 .badge {
@@ -1907,6 +1949,20 @@ p {
 
 .fondo-gris-claro {
   background-color: #DADADA !important;
+}
+
+.fondo-transparente {
+  background-color: transparent !important;
+}
+
+.img-loki {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=styleprueba.css.map */

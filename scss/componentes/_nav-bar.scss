@@ -102,11 +102,33 @@
   }
 }
 
+/*
+
 .logo-loki {
   font-size: 1.25rem;
   font-weight: bold;
   white-space: nowrap;
 }
+*/
+
+
+.logo-loki {
+  font-size: 1.25rem;
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+
+  img {
+    height: 50px; 
+    width: auto; 
+    max-width: 100%; 
+    object-fit: contain; 
+  }
+}
+
+
 
 .nav-links {
   display: flex;
@@ -116,11 +138,38 @@
   padding: 0;
 }
 
+/*
 .search-box {
   input {
     
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     border: 1px solid #396c2a;
+  }
+}
+
+*/
+
+.search-box {
+  input {
+    width: 250px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid #396c2a;
+    background-color: colores.$white;
+    color: colores.$verde-loki;
+    font-family: tipografia.$font-midgard;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+      color: color.scale(colores.$verde-loki, $lightness: 30%);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: colores.$dorado-loki;
+      box-shadow: 0 0 0 4px color.scale(colores.$dorado-loki, $alpha: -50%);
+    }
   }
 }
