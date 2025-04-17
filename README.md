@@ -83,7 +83,7 @@ Descarga el archivo CSS compilado desde la carpeta `/dist` o cópialo desde GitH
 
 Consulta la documentación completa en:
 
-🔗 **[https://victorg14.github.io/lokistyle-css](https://victorg14.github.io/Lokistyle-css/)**  
+🔗 **[https://victorg14.github.io/lokistyle-css](https://victorg14.github.io/Bootstrap-LokiStyle/)**  
 
 
 ---
