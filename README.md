@@ -105,4 +105,4 @@ Consulta la documentación completa en:
 
 ## 💬 Licencia
 
-Este proyecto ha sido desarrollado con fines educativos para el curso de Herramientas de Productividad. Uso libre con fines académicos.
+Este proyecto ha sido desarrollado con fines educativos para el curso de Herramientas de Productividad. Uso libre con fines académicos. 
