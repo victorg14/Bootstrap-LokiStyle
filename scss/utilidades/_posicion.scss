@@ -1,26 +1,72 @@
 // Tipos de posicionamiento
-.pos-relativa    { position: relative !important; }
-.pos-absoluta    { position: absolute !important; }
-.pos-fija        { position: fixed !important; }
-.pos-estatica    { position: static !important; }
-.pos-sticky      { position: sticky !important; }
+.pos-relativa {
+  position: relative !important;
+}
+
+.pos-absoluta {
+  position: absolute !important;
+}
+
+.pos-fija {
+  position: fixed !important;
+}
+
+.pos-estatica {
+  position: static !important;
+}
+
+.pos-sticky {
+  position: sticky !important;
+}
 
 // Coordenadas básicas (en rem para escalabilidad)
-.top-0    { top: 0 !important; }
-.top-1    { top: 1rem !important; }
-.top-2    { top: 2rem !important; }
+.top-0 {
+  top: 0 !important;
+}
 
-.bottom-0    { bottom: 0 !important; }
-.bottom-1    { bottom: 1rem !important; }
-.bottom-2    { bottom: 2rem !important; }
+.top-1 {
+  top: 1rem !important;
+}
 
-.left-0    { left: 0 !important; }
-.left-1    { left: 1rem !important; }
-.left-2    { left: 2rem !important; }
+.top-2 {
+  top: 2rem !important;
+}
 
-.right-0    { right: 0 !important; }
-.right-1    { right: 1rem !important; }
-.right-2    { right: 2rem !important; }
+.bottom-0 {
+  bottom: 0 !important;
+}
+
+.bottom-1 {
+  bottom: 1rem !important;
+}
+
+.bottom-2 {
+  bottom: 2rem !important;
+}
+
+.left-0 {
+  left: 0 !important;
+}
+
+.left-1 {
+  left: 1rem !important;
+}
+
+.left-2 {
+  left: 2rem !important;
+}
+
+.right-0 {
+  right: 0 !important;
+}
+
+.right-1 {
+  right: 1rem !important;
+}
+
+.right-2 {
+  right: 2rem !important;
+}
 
 // Centrados mágicos
 .centro-absoluto {
@@ -43,9 +89,36 @@
 }
 
 // Z-index
-.z-0   { z-index: 0 !important; }
-.z-10  { z-index: 10 !important; }
-.z-50  { z-index: 50 !important; }
-.z-100 { z-index: 100 !important; }
-.z-auto { z-index: auto !important; }
+.z-0 {
+  z-index: 0 !important;
+}
 
+.z-10 {
+  z-index: 10 !important;
+}
+
+.z-50 {
+  z-index: 50 !important;
+}
+
+.z-100 {
+  z-index: 100 !important;
+}
+
+.z-auto {
+  z-index: auto !important;
+}
+
+// Clases para márgenes y rellenos rápidos (en rem)
+.margen-top-1 { margin-top: 1rem !important; }
+.margen-top-2 { margin-top: 2rem !important; }
+.margen-top-3 { margin-top: 3rem !important; }
+.margen-top-4 { margin-top: 4rem !important; }
+.margen-top-5 { margin-top: 5rem !important; }
+
+// Clases para padding superior (en rem)
+.padding-top-1 { padding-top: 1rem !important; }
+.padding-top-2 { padding-top: 2rem !important; }
+.padding-top-3 { padding-top: 3rem !important; }
+.padding-top-4 { padding-top: 4rem !important; }
+.padding-top-5 { padding-top: 5rem !important; }

@@ -1,6 +1,9 @@
 // Usar archivos parciales desde sus respectivas carpetas
+@use 'base/reset';
 @use 'base/colores';
 @use 'base/tipografia';
+
+
 
 @use 'abstracts/mixins';
 @use 'abstracts/breakpoints';
