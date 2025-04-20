@@ -11,31 +11,28 @@
 // Contenedor base: con ancho máximo en pantallas grandes
 .container {
   width: 100%;
-  //padding-left: 1rem;
-  //padding-right: 1rem;
-  //margin-left: auto;
-  //margin-right: auto;
-  overflow: hidden;  // Para evitar desbordamientos
+  
+  overflow: hidden;  
 
   // Anchos máximos por breakpoint
   @include mixins.respond(p) {
     max-width: 540px;
-    background-color: red;
+   
   }
 
   @include mixins.respond(m) {
     max-width: 720px;
-    background-color: rgb(126, 180, 203);
+    
   }
 
   @include mixins.respond(g) {
     max-width: 960px; 
-    background-color: rgb(216, 215, 123);
+    
   }
 
   @include mixins.respond(xg) {
     max-width: 1140px; 
-    background-color: colores.$verde-loki;
+    
   }
 }
 
@@ -68,10 +65,9 @@
 
 .container-frost {
   background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
-  //padding: 1.5rem;
-  //border-radius: 1rem;
+  
   box-shadow: 0 0 20px rgba(173, 216, 230, 0.5);
-  //margin: auto;
+ 
   width: 100%;
   overflow: hidden;  // Para evitar desbordamientos
 
@@ -99,7 +95,7 @@
   border-radius: 0.75rem;
   margin: auto;
   width: 100%;
-  overflow: hidden;  // Para evitar desbordamientos
+  overflow: hidden;  
 
   @include mixins.respond(p) {
     max-width: 540px;
@@ -150,8 +146,7 @@
 // Contenedor fluido: siempre 100% ancho del viewport
 .contenedor-fluid {
   width: 100%;
-  //padding-left: 1rem;
-  //padding-right: 1rem;
+  
 }
 
 // Contenedor completo: ocupa todo el viewport

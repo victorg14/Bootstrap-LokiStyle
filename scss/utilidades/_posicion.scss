@@ -19,6 +19,13 @@
   position: sticky !important;
 }
 
+.final-derecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 // Coordenadas básicas (en rem para escalabilidad)
 .top-0 {
   top: 0 !important;

@@ -23,3 +23,82 @@ $azul-hielo:      #1F618D;
 //Colores Neutrales Claros 
 $gris-claro:    #DADADA;   
 $blanco-calido:     #F7F7F7;   
+
+//paleta de colores principal
+.primer-color{
+    background-color: 	#55863f;
+}
+
+.segundo-color{
+
+    background-color: #0f4421;
+}
+
+.tercer-color{
+    background-color: 	#112d0f;
+}
+
+.cuarto-color{
+    background-color: 	#d3b616;
+}
+
+.quinto-color{
+    background-color: 	#2f352c;
+}
+
+
+//variantes de colores
+.color-calido{
+    background-color: $gris-claro;
+}
+
+.dorado-suave{
+    background-color: $dorado-suave;
+}
+
+
+// Colores Principales - Tema Loki
+.bg-verde-loki { background-color: $verde-loki; }
+.text-verde-loki { color: $verde-loki; }
+
+.bg-verde-esmeralda { background-color: $verde-esmeralda; }
+.text-verde-esmeralda { color: $verde-esmeralda; }
+
+.bg-verde-oscuro { background-color: $verde-oscuro; }
+.text-verde-oscuro { color: $verde-oscuro; }
+
+.bg-dorado-loki { background-color: $dorado-loki; }
+.text-dorado-loki { color: $dorado-loki; }
+
+.bg-dorado-suave { background-color: $dorado-suave; }
+.text-dorado-suave { color: $dorado-suave; }
+
+.bg-bronce { background-color: $bronce; }
+.text-bronce { color: $bronce; }
+
+// Colores Oscuros y Neutros
+.bg-gris-oscuro { background-color: $gris-oscuro; }
+.text-gris-oscuro { color: $gris-oscuro; }
+
+.bg-carbon { background-color: $carbon; }
+.text-carbon { color: $carbon; }
+
+.bg-black { background-color: $black; }
+.text-black { color: $black; }
+
+.bg-white { background-color: $white; }
+.text-white { color: $white; }
+
+// Colores Opcionales - Toque Mágico/Asgardiano
+.bg-morado-magico { background-color: $morado-magico; }
+.text-morado-magico { color: $morado-magico; }
+
+.bg-azul-hielo { background-color: $azul-hielo; }
+.text-azul-hielo { color: $azul-hielo; }
+
+// Colores Neutrales Claros
+.bg-gris-claro { background-color: $gris-claro; }
+.text-gris-claro { color: $gris-claro; }
+
+.bg-blanco-calido { background-color: $blanco-calido; }
+.text-blanco-calido { color: $blanco-calido; }

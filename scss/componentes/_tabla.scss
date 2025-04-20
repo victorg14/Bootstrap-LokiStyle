@@ -1,0 +1,87 @@
+@use '../base/colores';
+@use '../base/tipografia';
+@use 'sass:color';
+
+.tabla-loki {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: tipografia.$font-midgard;
+  color: colores.$verde-oscuro;
+  background-color: colores.$white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid colores.$gris-claro;
+  }
+
+  thead {
+    background-color: colores.$verde-loki;
+    color: colores.$white;
+    font-weight: bold;
+  }
+
+  tbody tr {
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: color.scale(colores.$verde-loki, $lightness: 80%);
+    }
+  }
+
+  tfoot {
+    background-color: colores.$bronce;
+    color: colores.$white;
+    font-weight: bold;
+  }
+}
+
+// Variante oscura
+.tabla-loki-oscura {
+  @extend .tabla-loki;
+  background-color: colores.$carbon;
+  color: colores.$white;
+
+  th, td {
+    border-color: colores.$gris-oscuro;
+  }
+
+  thead {
+    background-color: colores.$dorado-loki;
+    color: colores.$black;
+  }
+
+  tbody tr:hover {
+    background-color: color.scale(colores.$dorado-loki, $lightness: 80%);
+  }
+
+  tfoot {
+    background-color: colores.$verde-oscuro;
+  }
+}
+
+// Tabla con bordes
+.tabla-loki-bordered {
+  @extend .tabla-loki;
+
+  th, td {
+    border: 1px solid colores.$verde-oscuro;
+  }
+
+  thead {
+    border-bottom: 2px solid colores.$dorado-loki;
+  }
+}
+
+// Tabla responsive (scroll en móviles)
+.tabla-responsive {
+  width: 100%;
+  overflow-x: auto;
+
+  .tabla-loki {
+    min-width: 600px;
+  }
+}
