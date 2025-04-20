@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../scss/styleLoki.css">
+    <link rel="stylesheet" href="css/Style.css">
+
+</head>
+
+<body class="bg-gradiente-asgard text-white fuente-midgard ">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar-gloriosa fila">
+        <!-- Logo -->
+        <div class="col-1">
+            <div class="logo-loki">
+                <img src="../img/logo.png" alt="Logo de Loki UI">
+            </div>
+        </div>
+
+        <!-- Enlaces de Navegación -->
+        <div class="col-5">
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="introduccion.html">Documentación</a></li>
+               
+                <li><a href="componentes.html">Componentes</a></li>
+
+            </ul>
+        </div>
+
+        <!-- Caja de búsqueda -->
+        <div class="col-3">
+            <div class="search-box sombra-dorada">
+                <input type="text" placeholder="Buscar..." class="input-busqueda">
+            </div>
+        </div>
+
+        <!-- Enlace a Git -->
+        <div class="col-2 p-1">
+            <div class=" p-1">
+                <a class="final-derecha" href="https://github.com/victorg14/Bootstrap-LokiStyle" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 .297c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.4.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.6-1.5-1.4-1.9-1.4-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.2 2 3 1.4 3.8 1 .1-.9.5-1.4.9-1.7-2.7-.3-5.5-1.4-5.5-6.1 0-1.4.5-2.5 1.3-3.4-.1-.3-.6-1.7.1-3.4 0 0 1.1-.3 3.5 1.3a12 12 0 0 1 6.4 0c2.4-1.6 3.5-1.3 3.5-1.3.7 1.7.2 3.1.1 3.4.8.9 1.3 2 1.3 3.4 0 4.7-2.8 5.8-5.5 6.1.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4 0-6.6-5.4-12-12-12z" />
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class=" fila">
+        <div class="col-2 sidebar-loki">
+            <p>Empezando</p>
+            <ul>
+                <li><a href="introduccion.html">Introducción</a></li>
+                <li><a href="contenido.html">Contenido</a></li>
+            </ul>
+
+            <p><span>Personalizar</span></p>
+            <ul>
+                <li><a href="descripcion.html">Descripción</a></li>
+                <li><a href="color.html">Color</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="variables.html">Variables CSS</a></li>
+            </ul>
+
+            <p><span>Layout</span></p>
+
+            <ul>
+                <li><a href="breakpoints.html">Breakpoints</a></li>
+                <li><a href="contenedores.html">Contenedores</a></li>
+                <li><a href="grid">Grid</a></li>
+                
+            </ul>
+
+            <p><span>Componentes</span></p>
+
+            <ul>
+                <li><a href="alertas.html">Alertas</a></li>
+                <li><a href="badges.html">Badges</a></li>
+                <li><a href="botones.html">Botones</a></li>
+                <li><a href="targetas.html">Tagetas</a></li>
+                <li><a href="navbar.html">Navbar</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- contenido de la pajina-->
+        <div class="col-10 container-frost  p-5 text-black">
+
+
+
+           
+                <div class="color-fondo sombra-md p-3 borde-redondo">
+                    <h1 class="text-center fondo-verde-loki p-2 borde-redondo titulo-responsive">Breakpoints en LokiStyle</h1>
+
+                    <p class="text-center margen-top-2">
+                        LokiStyle adapta tu sitio a diferentes tamaños de pantalla usando puntos de quiebre flexibles y
+                        personalizados.
+                    </p>
+
+                    <div class="margen-top-5 sombra-verde fondo-blanco-calido p-3 borde-redondo">
+                        <h2 class="text-center fondo-dorado-loki p-2 borde-redondo titulo-responsive">Tabla de Breakpoints</h2>
+
+                        <div class="texto-responsive overflow-auto margen-top-3 d-flex justify-center">
+                            <table class="w-100">
+                                <thead class="fondo-verde-oscuro white-text">
+                                    <tr>
+                                        <th class="p-2">Nombre</th>
+                                        <th class="p-2">Medida mínima</th>
+                                        <th class="p-2">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="p-2">p (pequeño)</td>
+                                        <td class="p-2">≥ 576px</td>
+                                        <td class="p-2">Teléfonos en vertical</td>
+                                    </tr>
+                                    <tr class="fondo-gris-claro">
+                                        <td class="p-2">m (mediano)</td>
+                                        <td class="p-2">≥ 768px</td>
+                                        <td class="p-2">Tabletas y teléfonos grandes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2">g (grande)</td>
+                                        <td class="p-2">≥ 992px</td>
+                                        <td class="p-2">Escritorios y laptops</td>
+                                    </tr>
+                                    <tr class="fondo-gris-claro">
+                                        <td class="p-2">xg (extra grande)</td>
+                                        <td class="p-2">≥ 1200px</td>
+                                        <td class="p-2">Pantallas grandes o UHD</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="margen-top-5 p-3 fondo-gris-claro borde-redondo sombra-xs">
+                        <h3 class="text-center fondo-morado-magico p-2 borde-redondo white-text titulo-responsive">¿Cómo utilizar los
+                            breakpoints?</h3>
+
+                        <p class="margen-top-2">
+                            LokiStyle te permite ocultar o mostrar elementos en diferentes dispositivos utilizando
+                            clases como:
+                        </p>
+
+                        <ul class="margen-top-3 pl-3">
+                            <li><code>.oculto-p</code> — Oculta en pantallas pequeñas.</li>
+                            <li><code>.oculto-m</code> — Oculta en pantallas medianas.</li>
+                            <li><code>.oculto-g</code> — Oculta en pantallas grandes.</li>
+                            <li><code>.oculto-xg</code> — Oculta en pantallas extra grandes.</li>
+                            <li class="margen-top-2"><code>.solo-p</code> — Muestra solo en pantallas pequeñas.</li>
+                            <li><code>.solo-m</code> — Muestra solo en pantallas medianas.</li>
+                            <li><code>.solo-g</code> — Muestra solo en pantallas grandes.</li>
+                            <li><code>.solo-xg</code> — Muestra solo en pantallas extra grandes.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+
+
+        </div>
+
+    </div>
+
+    <!-- Footer  -->
+    <footer class="text-center mt-12 p-6 text-sm text-black fila bg-gris-claro margen-top-1">
+        <div class="col-6">
+            <div class="fila-vertical">
+                <div class="logo-loki final-derecha"><img src="../img/logo.png" alt=""></div>
+                <div>
+                    <p>CREADO POR</p>
+                    <ul>
+                        <li>Victor Manuel Gonzalez Barrera</li>
+                        <li>Jasson Amílcar Sánchez Pérez</li>
+                        <li>Francisco Natanael Yanes Martínez</li>
+                        <li>Carlos Alejandro Barrientos Lapa</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h5>"Inspirado en la astucia y el caos de Loki."</h5>
+            <p>Diseñado y construido con todo el amor del mundo por el equipo de Herramientas de Productividad.</p>
+            <p>LokiStyle V1.0</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

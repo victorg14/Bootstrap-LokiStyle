@@ -1,8 +1,8 @@
 // Breakpoints Loki (puedes modificarlos según tu diseño)
-$breakpoint-p: 576px;   // p: pequeño (móviles)
-$breakpoint-m: 768px;   // m: mediano (tablets)
-$breakpoint-g: 992px;   // g: grande (laptops)
-$breakpoint-xg: 1200px; // xg: extra grande (pantallas grandes)
+$breakpoint-p: 576px;   
+$breakpoint-m: 768px;  
+$breakpoint-g: 992px;   
+$breakpoint-xg: 1200px; 
 
 // Mixin principal de media queries
 @mixin respond($breakpoint) {

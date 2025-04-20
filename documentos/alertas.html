@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../scss/styleLoki.css">
+    <link rel="stylesheet" href="css/Style.css">
+
+</head>
+
+<body class="bg-gradiente-asgard text-white fuente-midgard ">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar-gloriosa fila">
+        <!-- Logo -->
+        <div class="col-1">
+            <div class="logo-loki">
+                <img src="../img/logo.png" alt="Logo de Loki UI">
+            </div>
+        </div>
+
+        <!-- Enlaces de Navegación -->
+        <div class="col-5">
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Documentación</a></li>
+                
+                <li><a href="componentes.html">Componentes</a></li>
+
+            </ul>
+        </div>
+
+        <!-- Caja de búsqueda -->
+        <div class="col-3">
+            <div class="search-box sombra-dorada">
+                <input type="text" placeholder="Buscar..." class="input-busqueda">
+            </div>
+        </div>
+
+        <!-- Enlace a Git -->
+        <div class="col-2 p-1">
+            <div class=" p-1">
+                <a class="final-derecha" href="https://github.com/victorg14/Bootstrap-LokiStyle" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 .297c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.4.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.6-1.5-1.4-1.9-1.4-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.2 2 3 1.4 3.8 1 .1-.9.5-1.4.9-1.7-2.7-.3-5.5-1.4-5.5-6.1 0-1.4.5-2.5 1.3-3.4-.1-.3-.6-1.7.1-3.4 0 0 1.1-.3 3.5 1.3a12 12 0 0 1 6.4 0c2.4-1.6 3.5-1.3 3.5-1.3.7 1.7.2 3.1.1 3.4.8.9 1.3 2 1.3 3.4 0 4.7-2.8 5.8-5.5 6.1.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4 0-6.6-5.4-12-12-12z" />
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class=" fila">
+        <div class="col-2 sidebar-loki">
+            <p>Empezando</p>
+            <ul>
+                <li><a href="introduccion.html">Introducción</a></li>
+                <li><a href="contenido.html">Contenido</a></li>
+            </ul>
+
+            <p><span>Personalizar</span></p>
+            <ul>
+                <li><a href="descripcion.html">Descripción</a></li>
+                <li><a href="color.html">Color</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="variables.html">Variables CSS</a></li>
+            </ul>
+
+            <p><span>Layout</span></p>
+
+            <ul>
+                <li><a href="breakpoints.html">Breakpoints</a></li>
+                <li><a href="contenedores.html">Contenedores</a></li>
+                <li><a href="grid.html">Grid</a></li>
+              
+            </ul>
+
+            <p><span>Componentes</span></p>
+
+            <ul>
+                <li><a href="alertas.html">Alertas</a></li>
+                <li><a href="badges.html">Badges</a></li>
+                <li><a href="botones.html">Botones</a></li>
+                <li><a href="targetas.html">Tagetas</a></li>
+                <li><a href="navbar.html">Navbar</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- contenido de la pajina-->
+        <div class="col-10 container-frost  p-5 text-black">
+
+            
+
+                <h1 class="text-center fondo-verde-loki p-2 borde-redondo titulo-responsive">Alertas LokiStyle</h1>
+
+                <p class="text-center margen-top-2">
+                    Las alertas son mensajes rápidos para mostrar información, advertencias, errores o éxitos de una
+                    acción.
+                    Personalizadas con los colores y estilos mágicos de LokiStyle.
+                </p>
+
+                <div class="margen-top-5 sombra-verde fondo-blanco-calido p-3 borde-redondo contenedor-texto">
+                    <h2 class="text-center fondo-dorado-loki p-2 borde-redondo titulo-responsive">Estructura Básica</h2>
+
+                    <div class="contenedor-texto margen-top-2">
+                        <pre class="p-2 borde-redondo ">
+                                &lt;div class="alerta alerta-exito"&gt;
+                                    ¡Éxito! Todo ha salido bien.
+                                &lt;/div&gt;
+                      </pre>
+                    </div>
+                </div>
+
+                <div class="margen-top-5">
+                    <h2 class="text-center fondo-morado-magico p-2 borde-redondo titulo-responsive">Tipos de Alertas
+                    </h2>
+
+                    <div class="margen-top-4 texto-blanco">
+                        <!-- Alerta de éxito -->
+                        <div class="alerta alerta-exito fondo-verde-esmeralda borde-redondo sombra-xs p-3 margen-top-2">
+                            ✅ ¡Operación realizada exitosamente!
+                        </div>
+
+                        <!-- Alerta de información -->
+                        <div class="alerta alerta-info fondo-azul-hielo borde-redondo sombra-xs p-3 margen-top-2">
+                            ℹ️ Esta es una alerta informativa.
+                        </div>
+
+                        <!-- Alerta de advertencia -->
+                        <div
+                            class="alerta alerta-advertencia fondo-dorado-suave borde-redondo sombra-xs p-3 margen-top-2">
+                            ⚠️ Cuidado, esta es una advertencia.
+                        </div>
+
+                        <!-- Alerta de error -->
+                        <div
+                            class="alerta alerta-error fondo-morado-magico borde-redondo sombra-xs p-3 margen-top-2 white-text">
+                            ❌ ¡Ha ocurrido un error!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="margen-top-5 sombra-oscura fondo-blanco-calido p-3 borde-redondo">
+                    <h2 class="text-center fondo-verde-loki p-2 borde-redondo titulo-responsive">¿Cómo funcionan?</h2>
+
+                    <ul class="pl-3 margen-top-2">
+                        <li class="margen-top-2"><strong>.alerta:</strong> Clase general para todas las alertas.
+                        </li>
+                        <li class="margen-top-2"><strong>.alerta-exito:</strong> Estilo para alertas de éxito
+                            (verde).</li>
+                        <li class="margen-top-2"><strong>.alerta-info:</strong> Estilo para alertas informativas
+                            (azul hielo).</li>
+                        <li class="margen-top-2"><strong>.alerta-advertencia:</strong> Estilo para advertencias
+                            (dorado suave).</li>
+                        <li class="margen-top-2"><strong>.alerta-error:</strong> Estilo para errores (morado
+                            mágico).</li>
+                    </ul>
+                </div>
+
+           
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Footer  -->
+    <footer class="text-center mt-12 p-6 text-sm text-black fila bg-gris-claro margen-top-1">
+        <div class="col-6">
+            <div class="fila-vertical">
+                <div class="logo-loki final-derecha"><img src="../img/logo.png" alt=""></div>
+                <div>
+                    <p>CREADO POR</p>
+                    <ul>
+                        <li>Victor Manuel Gonzalez Barrera</li>
+                        <li>Jasson Amílcar Sánchez Pérez</li>
+                        <li>Francisco Natanael Yanes Martínez</li>
+                        <li>Carlos Alejandro Barrientos Lapa</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h5>"Inspirado en la astucia y el caos de Loki."</h5>
+            <p>Diseñado y construido con todo el amor del mundo por el equipo de Herramientas de Productividad.</p>
+            <p>LokiStyle V1.0</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

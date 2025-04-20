@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenido</title>
+    <title>Introduccion</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../scss/styleprueba.css">
+    <link rel="stylesheet" href="../scss/styleLoki.css">
     <link rel="stylesheet" href="css/Style.css">
 
 </head>
@@ -27,9 +27,9 @@
         <div class="col-5">
             <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Documentación</a></li>
-                <li><a href="#">Ejemplos</a></li>
-                <li><a href="#">Componentes</a></li>
+                <li><a href="descripcion.html">Documentación</a></li>
+              
+                <li><a href="componentes.html">Componentes</a></li>
 
             </ul>
         </div>
@@ -65,7 +65,7 @@
                 <li><a href="contenido.html">Contenido</a></li>
             </ul>
 
-            <p><span>Personalizar</span></p>
+            <p><span>Fundamentos</span></p>
             <ul>
                 <li><a href="descripcion.html">Descripción</a></li>
                 <li><a href="color.html">Color</a></li>
@@ -78,8 +78,7 @@
             <ul>
                 <li><a href="breakpoints.html">Breakpoints</a></li>
                 <li><a href="contenedores.html">Contenedores</a></li>
-                <li><a href="grid">Grid</a></li>
-                <li><a href="utilidadades.html">Utilidades</a></li>
+                <li><a href="grid.html">Grid</a></li>               
             </ul>
 
             <p><span>Componentes</span></p>
@@ -98,9 +97,102 @@
         <!-- contenido de la pajina-->
         <div class="col-10 container-frost  p-5 text-black">
 
+            <h1 class="  p-3 rounded mb-3 titulo-responsive">Componentes LokiStyle</h1>
+            <p class="px-2 py-1">
+                Bienvenido a la página de componentes de LokiStyle. Aquí encontrarás una colección mágica de
+                botones, tarjetas, sombras, colores, fondos y utilidades diseñadas para crear interfaces
+                responsivas, elegantes y poderosas.
+                Cada componente ha sido pensado para adaptarse a distintos dispositivos y mantener la estética
+                mística de Loki.
+                ¡Explora, combina y construye tus propias experiencias visuales!
+            </p>
+
+
+
+            <section class="margen-top-2">
+                <h2 class="texto-centrado margen-top-2">Paleta de Colores Loki</h2>
+                <div class="display-flex flex-wrap gap-2 justify-center">
+                    <div class="fondo-verde-loki sombra-xs p-3 rounded-lg">Verde Loki</div>
+                    <div class="fondo-dorado-loki sombra-xs p-3 rounded-lg">Dorado Loki</div>
+                    <div class="fondo-carbon sombra-xs p-3 rounded-lg texto-blanco">Carbon</div>
+                    <div class="fondo-bronce sombra-xs p-3 rounded-lg">Bronce</div>
+                    <div class="fondo-morado-magico sombra-xs p-3 rounded-lg texto-blanco">Morado Mágico</div>
+                </div>
+            </section>
+
+            <section class="margen-top-5">
+                <h2 class="texto-centrado">Botones Loki</h2>
+                <div class="display-flex flex-wrap gap-2 justify-center margen-top-2">
+                    <button class="btn-loki fondo-verde-loki texto-blanco sombra-sm">Botón Verde Loki</button>
+                    <button class="btn-dorado fondo-dorado-loki texto-carbon sombra-sm">Botón Dorado Loki</button>
+                    <button class="btn-oscuro fondo-carbon texto-blanco sombra-sm">Botón Carbon</button>
+                </div>
+            </section>
+
+            <section class="margen-top-5 texto-responsive fila fila-horizontal">
+                <h2 class="texto-centrado">Tarjetas Loki</h2>
+                <div class="display-flex flex-wrap gap-4 justify-center margen-top-2 col-12">
+                    <div class="card fondo-blanco sombra-md rounded-lg p-4 col-12" style="width: 18rem;">
+                        <h3 class="texto-centrado margen-top-1">Tarjeta Simple</h3>
+                        <p class="texto-centrado">Ejemplo de tarjeta con sombra mediana y bordes redondeados.</p>
+                    </div>
+
+                    <div class="card fondo-morado-magico sombra-magica rounded-lg p-4 texto-blanco col-12"
+                        style="width: 18rem;">
+                        <h3 class="texto-centrado margen-top-1">Tarjeta Mágica</h3>
+                        <p class="texto-centrado">Tarjeta usando fondo mágico y sombra especial Loki.</p>
+                    </div>
+
+                    <div class="card fondo-dorado-loki sombra-dorada rounded-lg p-4 col-12" style="width: 18rem;">
+                        <h3 class="texto-centrado margen-top-1">Tarjeta Dorada</h3>
+                        <p class="texto-centrado">Con fondo dorado suave y sombra personalizada.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="margen-top-5 margen-bottom-5 texto-responsive fila">
+                <h2 class="texto-centrado">Ejemplo Combinado</h2>
+                <div class="card fondo-verde-loki sombra-verde rounded-lg p-5 display-flex flex-column gap-3 align-center col-12"
+                    style="width: 22rem;">
+                    <h3 class="texto-blanco texto-centrado">Tarjeta + Botón</h3>
+                    <p class="texto-blanco texto-centrado">Esta tarjeta combina fondo, sombra y botones de LokiStyle.
+                    </p>
+                    <button class="btn-magico btn-m fondo-blanco-calido texto-carbon sombra-xs">Acción Loki</button>
+                </div>
+            </section>
+
+
+
+
 
 
         </div>
+
+    </div>
+
+    <!-- Footer  -->
+    <footer class="text-center mt-12 p-6 text-sm text-black fila bg-gris-claro margen-top-1">
+        <div class="col-6">
+            <div class="fila-vertical">
+                <div class="logo-loki final-derecha"><img src="../img/logo.png" alt=""></div>
+                <div>
+                    <p>CREADO POR</p>
+                    <ul>
+                        <li>Victor Manuel Gonzalez Barrera</li>
+                        <li>Jasson Amílcar Sánchez Pérez</li>
+                        <li>Francisco Natanael Yanes Martínez</li>
+                        <li>Carlos Alejandro Barrientos Lapa</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h5>"Inspirado en la astucia y el caos de Loki."</h5>
+            <p>Diseñado y construido con todo el amor del mundo por el equipo de Herramientas de Productividad.</p>
+            <p>LokiStyle V1.0</p>
+        </div>
+    </footer>
 
 </body>
 

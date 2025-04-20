@@ -1,10 +1,10 @@
 // En abstracts/_mixins.scss
-@use 'sass:map'; // Para usar map.get()
-@use '../abstracts/breakpoints' as b; // Usamos 'as b' para acceder al mapa de breakpoints con el prefijo 'b'
+@use 'sass:map'; 
+@use '../abstracts/breakpoints' as b; 
 
 // Mixin para los breakpoints
 @mixin respond($breakpoint) {
-  $size: map.get(b.$breakpoints, $breakpoint); // Accedemos a $breakpoints usando el prefijo 'b'
+  $size: map.get(b.$breakpoints, $breakpoint); 
   @media (min-width: $size) {
     @content;
   }

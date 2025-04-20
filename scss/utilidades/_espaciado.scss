@@ -6,8 +6,8 @@ $espaciado-valores: (
   2: 0.5rem,    // 8px
   3: 1rem,      // 16px
   4: 1.5rem,    // 24px
-  5: 2rem,      // 32px ← Aquí lo agregás
-  6: 3rem       // 48px (opcionalmente podés subir este al 6)
+  5: 2rem,      // 32px 
+  6: 3rem       // 48px 
 );
 
 @each $key, $value in $espaciado-valores {
