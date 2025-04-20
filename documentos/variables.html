@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../scss/styleprueba.css">
+    <link rel="stylesheet" href="css/Style.css">
+
+</head>
+
+<body class="bg-gradiente-asgard text-white fuente-midgard ">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar-gloriosa fila">
+        <!-- Logo -->
+        <div class="col-1">
+            <div class="logo-loki">
+                <img src="../img/logo.png" alt="Logo de Loki UI">
+            </div>
+        </div>
+
+        <!-- Enlaces de Navegación -->
+        <div class="col-5">
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Documentación</a></li>
+                <li><a href="#">Ejemplos</a></li>
+                <li><a href="#">Componentes</a></li>
+
+            </ul>
+        </div>
+
+        <!-- Caja de búsqueda -->
+        <div class="col-3">
+            <div class="search-box sombra-dorada">
+                <input type="text" placeholder="Buscar..." class="input-busqueda">
+            </div>
+        </div>
+
+        <!-- Enlace a Git -->
+        <div class="col-2 p-1">
+            <div class=" p-1">
+                <a class="final-derecha" href="https://github.com/victorg14/Bootstrap-LokiStyle" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 .297c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.4.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.6-1.5-1.4-1.9-1.4-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.2 2 3 1.4 3.8 1 .1-.9.5-1.4.9-1.7-2.7-.3-5.5-1.4-5.5-6.1 0-1.4.5-2.5 1.3-3.4-.1-.3-.6-1.7.1-3.4 0 0 1.1-.3 3.5 1.3a12 12 0 0 1 6.4 0c2.4-1.6 3.5-1.3 3.5-1.3.7 1.7.2 3.1.1 3.4.8.9 1.3 2 1.3 3.4 0 4.7-2.8 5.8-5.5 6.1.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4 0-6.6-5.4-12-12-12z" />
+                    </svg>
+
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class=" fila">
+        <div class="col-2 sidebar-loki">
+            <p>Empezando</p>
+            <ul>
+                <li><a href="introduccion.html">Introducción</a></li>
+                <li><a href="contenido.html">Contenido</a></li>
+            </ul>
+
+            <p><span>Personalizar</span></p>
+            <ul>
+                <li><a href="descripcion.html">Descripción</a></li>
+                <li><a href="color.html">Color</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="variables.html">Variables CSS</a></li>
+            </ul>
+
+            <p><span>Layout</span></p>
+
+            <ul>
+                <li><a href="breakpoints.html">Breakpoints</a></li>
+                <li><a href="contenedores.html">Contenedores</a></li>
+                <li><a href="grid">Grid</a></li>
+                <li><a href="utilidadades.html">Utilidades</a></li>
+            </ul>
+
+            <p><span>Componentes</span></p>
+
+            <ul>
+                <li><a href="alertas.html">Alertas</a></li>
+                <li><a href="badges.html">Badges</a></li>
+                <li><a href="botones.html">Botones</a></li>
+                <li><a href="targetas.html">Tagetas</a></li>
+                <li><a href="navbar.html">Navbar</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- contenido de la pajina-->
+        <div class="col-10 container-frost  p-5 text-black">
+
+            <!-- breakpoints -->
+            <section id="breakpoints">
+                <h2 class="titulo-responsive">Breakpoints</h2>
+                <p>Las siguientes son las variables de los breakpoints definidos en la librería LokiStyle:</p>
+                <div class=" color-fondo texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Breakpoint</th>
+                                <th class="tabla-loki__encabezado">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$breakpoints['p']</code></td>
+                                <td class="tabla-loki__celda">540px</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$breakpoints['m']</code></td>
+                                <td class="tabla-loki__celda">768px</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$breakpoints['l']</code></td>
+                                <td class="tabla-loki__celda">1024px</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$breakpoints['g']</code></td>
+                                <td class="tabla-loki__celda">960px</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$breakpoints['xg']</code></td>
+                                <td class="tabla-loki__celda">1140px</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- tablas de colores  -->
+
+            <section id="colores">
+                <h2 class="titulo-responsive">Colores</h2>
+                <p>A continuación se muestran las variables de color definidas en la librería LokiStyle:</p>
+
+                <!-- Tabla de Colores Principales - Tema Loki -->
+                <div class="color-fondo texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Variable</th>
+                                <th class="tabla-loki__encabezado">Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$verde-loki</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #5E8335; color: #fff;">#5E8335
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$verde-esmeralda</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #073D1D; color: #fff;">#073D1D
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$verde-oscuro</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #0F250F; color: #fff;">#0F250F
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$dorado-loki</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #D4B429; color: #fff;">#D4B429
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$dorado-suave</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #E6C95C; color: #fff;">#E6C95C
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$bronce</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #B4861A; color: #fff;">#B4861A
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tabla de Colores Oscuros y Neutros -->
+                <div class="color-fondo texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Variable</th>
+                                <th class="tabla-loki__encabezado">Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$gris-oscuro</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #33372F; color: #fff;">#33372F
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$carbon</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #1F1F1F; color: #fff;">#1F1F1F
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$black</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #000000; color: #fff;">#000000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$white</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #ffffff; color: #000;">#ffffff
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tabla de Colores Opcionales - Toque Mágico/Asgardiano -->
+                <div class="color-fondo texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Variable</th>
+                                <th class="tabla-loki__encabezado">Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$morado-magico</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #6C3483; color: #fff;">#6C3483
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$azul-hielo</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #1F618D; color: #fff;">#1F618D
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tabla de Colores Neutrales Claros -->
+                <div class="color-fondo">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Variable</th>
+                                <th class="tabla-loki__encabezado">Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$gris-claro</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #DADADA; color: #000;">#DADADA
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$blanco-calido</code></td>
+                                <td class="tabla-loki__celda" style="background-color: #F7F7F7; color: #000;">#F7F7F7
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- tipografia -->
+            <section id="tipografias-texto">
+                <h2 class="titulo-responsive">Tipografías y Utilidades de Texto</h2>
+                <p>Listado de las variables de tipografías y clases de utilidad de texto en la librería LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Variable o Clase</th>
+                                <th class="tabla-loki__encabezado">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$font-runes</code></td>
+                                <td class="tabla-loki__celda">Fuente para títulos: 'Cinzel', serif</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>$font-midgard</code></td>
+                                <td class="tabla-loki__celda">Fuente para cuerpo de texto: 'Poppins', sans-serif</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.text-encantado</code></td>
+                                <td class="tabla-loki__celda">Aplica un peso de fuente ligero (300)</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.text-glorioso</code></td>
+                                <td class="tabla-loki__celda">Aplica un peso de fuente en negrita</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.text-ilucion</code></td>
+                                <td class="tabla-loki__celda">Aplica estilo de fuente en cursiva</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.text-royal</code></td>
+                                <td class="tabla-loki__celda">Transforma el texto a mayúsculas</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.text-center</code></td>
+                                <td class="tabla-loki__celda">Centra el texto horizontalmente</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.text-right</code></td>
+                                <td class="tabla-loki__celda">Alinea el texto a la derecha</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.text-left</code></td>
+                                <td class="tabla-loki__celda">Alinea el texto a la izquierda</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.text-mistico</code></td>
+                                <td class="tabla-loki__celda">Aumenta el espaciado entre letras (letter-spacing: 0.1em)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- alertas -->
+            <section id="alertas">
+                <h2 class="titulo-responsive">Componentes de Alerta</h2>
+                <p>Listado de las clases de alertas disponibles en la librería LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Clase</th>
+                                <th class="tabla-loki__encabezado">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.alert-loki</code></td>
+                                <td class="tabla-loki__celda">Base para todas las alertas: padding, borde redondeado,
+                                    fuente Midgard, color blanco, transición suave.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.alert-gloriosa</code></td>
+                                <td class="tabla-loki__celda">Muestra mensajes exitosos. Fondo verde Loki aclarado,
+                                    borde verde Loki, texto verde oscuro.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.alert-dorada</code></td>
+                                <td class="tabla-loki__celda">Mensajes de información importante. Fondo dorado Loki
+                                    aclarado, borde dorado Loki, texto carbón.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.alert-oscura</code></td>
+                                <td class="tabla-loki__celda">Notificaciones neutras o misteriosas. Fondo gris oscuro
+                                    aclarado, borde gris oscuro, texto blanco.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.alert-magica</code></td>
+                                <td class="tabla-loki__celda">Mensajes mágicos o importantes. Fondo morado mágico
+                                    aclarado, borde morado mágico, texto blanco.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- badges -->
+            <section id="badges">
+                <h2 class="titulo-responsive">Badges</h2>
+                <p>Listado de las clases de badges disponibles en la librería LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Clase</th>
+                                <th class="tabla-loki__encabezado">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.badge</code></td>
+                                <td class="tabla-loki__celda">Estilo base de badge: padding, fuente en negrita, borde
+                                    redondeado y sombra.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.predeterminado</code></td>
+                                <td class="tabla-loki__celda">Badge gris claro con texto gris oscuro (estilo neutral).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.exito</code></td>
+                                <td class="tabla-loki__celda">Badge verde (éxito) usando el verde Loki.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.advertencia</code></td>
+                                <td class="tabla-loki__celda">Badge dorado suave (advertencia) con ajuste de brillo.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.error</code></td>
+                                <td class="tabla-loki__celda">Badge bronce (error) con texto blanco.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.informacion</code></td>
+                                <td class="tabla-loki__celda">Badge azul hielo (información) con texto blanco.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.magico</code></td>
+                                <td class="tabla-loki__celda">Badge púrpura mágico (toque místico) con ajuste de brillo.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.contorno</code></td>
+                                <td class="tabla-loki__celda">Badge con contorno: borde visible, fondo transparente y
+                                    efecto hover invertido.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.badge-small</code></td>
+                                <td class="tabla-loki__celda">Badge pequeño: fuente más chica y padding reducido.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.badge-large</code></td>
+                                <td class="tabla-loki__celda">Badge grande: fuente más grande y más padding.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.badge-super-pequeño</code></td>
+                                <td class="tabla-loki__celda">Badge súper pequeño: fuente ultra pequeña con padding
+                                    amplio.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Botones -->
+            <section id="botones">
+                <h2 class="titulo-responsive">Botones</h2>
+                <p>Listado de clases para botones en la librería LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Clase</th>
+                                <th class="tabla-loki__encabezado">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.btn-loki</code></td>
+                                <td class="tabla-loki__celda">Estilo base para todos los botones. Incluye padding, borde
+                                    redondeado y efecto hover flotante.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.btn-glorioso</code></td>
+                                <td class="tabla-loki__celda">Botón principal con fondo verde Loki y texto blanco.
+                                    Oscurece al pasar el mouse.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.btn-dorado</code></td>
+                                <td class="tabla-loki__celda">Botón de acento dorado Loki, con texto negro. Se oscurece
+                                    al pasar el mouse.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.btn-oscuro</code></td>
+                                <td class="tabla-loki__celda">Botón de fondo gris oscuro y texto blanco. Aclara
+                                    ligeramente al pasar el mouse.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.btn-magico</code></td>
+                                <td class="tabla-loki__celda">Botón especial de fondo púrpura mágico y texto blanco.
+                                    Oscurece su color al pasar el mouse.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.btn-p</code></td>
+                                <td class="tabla-loki__celda">Botón pequeño: padding y tamaño de fuente reducidos.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.btn-m</code></td>
+                                <td class="tabla-loki__celda">Botón mediano: tamaño estándar para acciones principales.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.btn-g</code></td>
+                                <td class="tabla-loki__celda">Botón grande: padding amplio y fuente más grande para dar
+                                    mayor énfasis.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Contenedores -->
+            <section id="contenedores">
+                <h2 class="titulo-responsive">Contenedores</h2>
+                <p>Listado de clases para contenedores en la librería LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Clase</th>
+                                <th class="tabla-loki__encabezado">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.container</code></td>
+                                <td class="tabla-loki__celda">Contenedor base con anchos máximos responsivos según el
+                                    tamaño del dispositivo.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.container-loki-dark</code></td>
+                                <td class="tabla-loki__celda">Contenedor oscuro con fondo <code>$carbon</code> y borde
+                                    verde Loki. Estilo ideal para secciones destacadas.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.container-frost</code></td>
+                                <td class="tabla-loki__celda">Contenedor con degradado azul claro y efecto de sombra
+                                    para un estilo fresco y moderno.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.container-border-glow</code></td>
+                                <td class="tabla-loki__celda">Contenedor con borde verde Loki que brilla, perfecto para
+                                    destacar contenido importante.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.container-glass</code></td>
+                                <td class="tabla-loki__celda">Contenedor estilo glassmorphism, con fondo difuminado y
+                                    bordes translúcidos.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.contenedor-fluid</code></td>
+                                <td class="tabla-loki__celda">Contenedor completamente fluido, siempre ocupa el 100% del
+                                    ancho disponible.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.contenedor-completo</code></td>
+                                <td class="tabla-loki__celda">Contenedor que ocupa todo el ancho y alto del viewport.
+                                    Centra el contenido vertical y horizontalmente.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.contenedor-responsive</code></td>
+                                <td class="tabla-loki__celda">Contenedor responsivo con bordes, sombra y cambios de
+                                    padding en diferentes tamaños de pantalla.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.contenedor-texto</code></td>
+                                <td class="tabla-loki__celda">Contenedor específico para texto con control de
+                                    desbordamiento horizontal, ideal para código o contenido extenso.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Formularios -->
+            <section id="formularios">
+                <h2  class="titulo-responsive">Formularios</h2>
+                <p>Listado de clases disponibles para formularios en la librería LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Clase</th>
+                                <th class="tabla-loki__encabezado">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.formulario</code></td>
+                                <td class="tabla-loki__celda">Contenedor principal del formulario con fondo oscuro,
+                                    sombra, bordes redondeados y tipografía Midgard.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.formulario label</code></td>
+                                <td class="tabla-loki__celda">Estiliza las etiquetas con color dorado Loki, mayúsculas y
+                                    espaciado entre letras.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.formulario input</code>, <code>select</code>,
+                                    <code>textarea</code>
+                                </td>
+                                <td class="tabla-loki__celda">Campos de entrada personalizados: fondo verde oscuro,
+                                    borde bronce, efecto al enfocar y versión <code>.filled</code> para campos
+                                    completados.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.formulario button</code></td>
+                                <td class="tabla-loki__celda">Botón de envío con fondo dorado Loki, animación de escala
+                                    al pasar el mouse y resalte verde al enfocar.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.formulario .error</code></td>
+                                <td class="tabla-loki__celda">Mensajes de error estilizados en color morado mágico,
+                                    centrados y de tamaño reducido.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.formulario .campo</code></td>
+                                <td class="tabla-loki__celda">Agrupa campos de formulario con separación interna
+                                    consistente.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.formulario .campo-con-borde</code></td>
+                                <td class="tabla-loki__celda">Agrupa campos que deben tener bordes bronceados
+                                    específicamente.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Navbars y Sidebar -->
+            <section id="navbars">
+                <h2  class="titulo-responsive">Navbars y Sidebar</h2>
+                <p>Listado de clases disponibles para la construcción de barras de navegación y sidebar en la librería
+                    LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Clase</th>
+                                <th class="tabla-loki__encabezado">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.navbar</code></td>
+                                <td class="tabla-loki__celda">Estructura base del navbar con tipografía Midgard,
+                                    espaciado interno y alineación de elementos.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.navbar-gloriosa</code></td>
+                                <td class="tabla-loki__celda">Navbar de fondo verde Loki y enlaces blancos con hover más
+                                    claro.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.navbar-oscura</code></td>
+                                <td class="tabla-loki__celda">Navbar de fondo carbón con enlaces blancos y hover dorado
+                                    Loki.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.navbar-dorada</code></td>
+                                <td class="tabla-loki__celda">Navbar de fondo dorado Loki con enlaces negros y hover
+                                    verde más oscuro.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.navbar-magica</code></td>
+                                <td class="tabla-loki__celda">Navbar de fondo morado mágico con enlaces blancos y hover
+                                    dorado suave.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.nav-links</code></td>
+                                <td class="tabla-loki__celda">Contenedor de enlaces de navegación con diseño horizontal
+                                    o en columna para pantallas pequeñas.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.logo-loki</code></td>
+                                <td class="tabla-loki__celda">Estilo para el logo dentro del navbar: tipografía grande,
+                                    peso en negrita y soporte para imagen al lado.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.search-box</code></td>
+                                <td class="tabla-loki__celda">Caja de búsqueda con input estilizado, bordes redondeados,
+                                    transiciones suaves y oculto en móviles.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.sidebar-loki</code></td>
+                                <td class="tabla-loki__celda">Sidebar vertical de fondo dorado Loki, navegación interna
+                                    con scroll, y enlaces estilizados que se adaptan al tamaño de pantalla.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Tablas Loki -->
+            <section id="tablas">
+                <h2 class="titulo-responsive">Tablas Loki</h2>
+                <p>Listado de clases disponibles para la creación de tablas estilizadas en la librería LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th class="tabla-loki__encabezado">Clase</th>
+                                <th class="tabla-loki__encabezado">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.tabla-loki</code></td>
+                                <td class="tabla-loki__celda">Tabla principal con diseño claro: bordes suaves, fondo
+                                    blanco, tipografía Midgard y efectos hover sobre las filas.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.tabla-loki-oscura</code></td>
+                                <td class="tabla-loki__celda">Variante oscura de la tabla, fondo carbón, texto blanco y
+                                    encabezado dorado Loki. Ideal para temas dark mode.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.tabla-loki-bordered</code></td>
+                                <td class="tabla-loki__celda">Versión de tabla con bordes definidos entre celdas,
+                                    acentuando la separación de la información.</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-loki__celda"><code>.tabla-responsive</code></td>
+                                <td class="tabla-loki__celda">Contenedor para hacer que las tablas sean scrollables
+                                    horizontalmente en pantallas pequeñas. Asegura la legibilidad en móviles.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Tarjetas Loki -->
+            <section id="tarjetas">
+                <h2  class="titulo-responsive">Tarjetas Loki</h2>
+                <p>Listado de clases disponibles para crear tarjetas estilizadas en la librería LokiStyle:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>.card-loki</code></td>
+                                <td>Tarjeta base con fondo blanco, borde sutil, sombra ligera y tipografía Midgard.
+                                    Incluye efecto hover de escala.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.card-dorada</code></td>
+                                <td>Tarjeta especial con fondo dorado Loki aclarado. Ideal para destacar contenido
+                                    importante.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.card-oscura</code></td>
+                                <td>Tarjeta con fondo carbón y borde gris oscuro. Perfecta para diseños de estilo oscuro
+                                    o elegante.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.card-magica</code></td>
+                                <td>Tarjeta alternativa con fondo morado mágico iluminado y borde morado. Útil para
+                                    secciones creativas o llamativas.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.card-header</code></td>
+                                <td>Sección superior de la tarjeta, con fondo verde esmeralda y fuente Runes. Ideal para
+                                    títulos o encabezados.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.card-body</code></td>
+                                <td>Zona principal del contenido de la tarjeta. Color carbón para el texto y padding
+                                    interno cómodo.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.card-footer</code></td>
+                                <td>Pie de la tarjeta, con fondo blanco cálido y texto alineado a la derecha. Útil para
+                                    notas finales o acciones.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Utilidades Flexbox -->
+            <section id="flexbox">
+                <h2  class="titulo-responsive">Utilidades Flexbox</h2>
+                <p>Clases disponibles en LokiStyle para aplicar Flexbox de manera rápida y sencilla:</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Display -->
+                            <tr>
+                                <td><code>.d-flex</code></td>
+                                <td>Aplica <strong>display: flex</strong> al contenedor.</td>
+                            </tr>
+
+                            <!-- Dirección -->
+                            <tr>
+                                <td><code>.flex-row</code></td>
+                                <td>Establece la dirección de los elementos hijos en fila (<strong>flex-direction:
+                                        row</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.flex-column</code></td>
+                                <td>Establece la dirección de los elementos hijos en columna (<strong>flex-direction:
+                                        column</strong>).</td>
+                            </tr>
+
+                            <!-- Alineación vertical -->
+                            <tr>
+                                <td><code>.align-start</code></td>
+                                <td>Alinea los ítems en la parte superior del contenedor (<strong>align-items:
+                                        flex-start</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.align-center</code></td>
+                                <td>Centra los ítems verticalmente (<strong>align-items: center</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.align-end</code></td>
+                                <td>Alinea los ítems en la parte inferior (<strong>align-items: flex-end</strong>).</td>
+                            </tr>
+
+                            <!-- Alineación horizontal -->
+                            <tr>
+                                <td><code>.justify-start</code></td>
+                                <td>Alinea los ítems al inicio horizontalmente (<strong>justify-content:
+                                        flex-start</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.justify-center</code></td>
+                                <td>Centra los ítems horizontalmente (<strong>justify-content: center</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.justify-end</code></td>
+                                <td>Alinea los ítems al final horizontalmente (<strong>justify-content:
+                                        flex-end</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.justify-between</code></td>
+                                <td>Distribuye los ítems dejando espacio entre ellos (<strong>justify-content:
+                                        space-between</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.justify-around</code></td>
+                                <td>Distribuye los ítems dejando espacio alrededor de ellos (<strong>justify-content:
+                                        space-around</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.justify-evenly</code></td>
+                                <td>Distribuye los ítems con espacios iguales entre todos (<strong>justify-content:
+                                        space-evenly</strong>).</td>
+                            </tr>
+
+                            <!-- Flex Wrap -->
+                            <tr>
+                                <td><code>.flex-wrap</code></td>
+                                <td>Permite que los ítems se envuelvan en múltiples líneas (<strong>flex-wrap:
+                                        wrap</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.flex-nowrap</code></td>
+                                <td>Evita que los ítems se envuelvan (<strong>flex-wrap: nowrap</strong>).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Sistema de Grid (Filas y Columnas) -->
+            <section id="grid">
+                <h2  class="titulo-responsive">Sistema de Grid</h2>
+                <p>Utiliza el sistema de filas y columnas de LokiStyle para crear layouts flexibles y responsivos.</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filas -->
+                            <tr>
+                                <td><code>.fila</code></td>
+                                <td>Contenedor flex que envuelve las columnas. Tiene <strong>flex-wrap: wrap</strong>
+                                    activado.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fila-horizontal</code></td>
+                                <td>Dirección horizontal (por defecto) para las columnas dentro de la fila
+                                    (<strong>flex-direction: row</strong>).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fila-vertical</code></td>
+                                <td>Dirección vertical para apilar las columnas (<strong>flex-direction:
+                                        column</strong>).</td>
+                            </tr>
+
+                            <!-- Columnas básicas -->
+                            <tr>
+                                <td><code>.col</code></td>
+                                <td>Columna automática que se adapta al espacio disponible.</td>
+                            </tr>
+
+                            <!-- Columnas fijas -->
+                            <tr>
+                                <td><code>.col-1</code> hasta <code>.col-12</code></td>
+                                <td>Columnas fijas que ocupan fracciones del ancho (por ejemplo, <strong>.col-6</strong>
+                                    ocupa el 50% del ancho).</td>
+                            </tr>
+
+                            <!-- Columnas responsivas -->
+                            <tr>
+                                <td><code>.col-[breakpoint]-[número]</code></td>
+                                <td>
+                                    Columnas adaptables según el tamaño de pantalla. <br>
+                                    Ejemplos: <code>.col-md-6</code> (6/12 columnas en pantallas medianas),
+                                    <code>.col-lg-4</code> (4/12 columnas en pantallas grandes).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>.col-[breakpoint]</code></td>
+                                <td>Columna automática en el breakpoint especificado (ej: <code>.col-sm</code> ocupa
+                                    espacio flexible en móviles).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Bordes Redondeados -->
+            <section id="bordes">
+                <h2 class="titulo-responsive">Bordes Redondeados</h2>
+                <p>Aplica radios de borde fácilmente con las clases auxiliares de LokiStyle.</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Radios generales -->
+                            <tr>
+                                <td><code>.rounded-xs</code></td>
+                                <td>Radio de borde extra pequeño (2px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.rounded-sm</code></td>
+                                <td>Radio de borde pequeño (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.rounded</code></td>
+                                <td>Radio de borde mediano (8px). Valor por defecto general.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.rounded-lg</code></td>
+                                <td>Radio de borde grande (16px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.rounded-xl</code></td>
+                                <td>Radio de borde extra grande (32px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.rounded-pill</code></td>
+                                <td>Radio completo (forma de pastilla o pill).</td>
+                            </tr>
+
+                            <!-- Radios por lado -->
+                            <tr>
+                                <td><code>.rounded-top</code></td>
+                                <td>Solo esquinas superiores redondeadas.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.rounded-bottom</code></td>
+                                <td>Solo esquinas inferiores redondeadas.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.rounded-left</code></td>
+                                <td>Solo esquinas izquierdas redondeadas.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.rounded-right</code></td>
+                                <td>Solo esquinas derechas redondeadas.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Espaciado -->
+            <section id="espaciado">
+                <h2 class="titulo-responsive">Espaciado (Margen y Padding)</h2>
+                <p>Utiliza estas clases para gestionar márgenes y rellenos en tus elementos.</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Clases de margen -->
+                            <tr>
+                                <td><code>.m-0</code></td>
+                                <td>Margen de 0.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.m-1</code></td>
+                                <td>Margen de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.m-2</code></td>
+                                <td>Margen de 0.5rem (8px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.m-3</code></td>
+                                <td>Margen de 1rem (16px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.m-4</code></td>
+                                <td>Margen de 1.5rem (24px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.m-5</code></td>
+                                <td>Margen de 2rem (32px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.m-6</code></td>
+                                <td>Margen de 3rem (48px).</td>
+                            </tr>
+
+                            <!-- Clases de margen por lado -->
+                            <tr>
+                                <td><code>.mt-1</code></td>
+                                <td>Margen superior de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.mb-1</code></td>
+                                <td>Margen inferior de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.ml-1</code></td>
+                                <td>Margen izquierdo de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.mr-1</code></td>
+                                <td>Margen derecho de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.mx-1</code></td>
+                                <td>Margen izquierdo y derecho de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.my-1</code></td>
+                                <td>Margen superior e inferior de 0.25rem (4px).</td>
+                            </tr>
+
+                            <!-- Clases de padding -->
+                            <tr>
+                                <td><code>.p-1</code></td>
+                                <td>Padding de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.pt-1</code></td>
+                                <td>Padding superior de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.pb-1</code></td>
+                                <td>Padding inferior de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.pl-1</code></td>
+                                <td>Padding izquierdo de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.pr-1</code></td>
+                                <td>Padding derecho de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.px-1</code></td>
+                                <td>Padding izquierdo y derecho de 0.25rem (4px).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.py-1</code></td>
+                                <td>Padding superior e inferior de 0.25rem (4px).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Fondos -->
+            <section id="fondos">
+                <h2  class="titulo-responsive">Fondos (Background)</h2>
+                <p>Utiliza estas clases para cambiar el fondo de tus elementos con colores predefinidos de la paleta
+                    Loki UI.</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Fondos principales Loki -->
+                            <tr>
+                                <td><code>.fondo-verde-loki</code></td>
+                                <td>Fondo verde Loki.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-verde-esmeralda</code></td>
+                                <td>Fondo verde esmeralda.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-verde-oscuro</code></td>
+                                <td>Fondo verde oscuro.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-dorado-loki</code></td>
+                                <td>Fondo dorado Loki.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-dorado-suave</code></td>
+                                <td>Fondo dorado suave.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-bronce</code></td>
+                                <td>Fondo bronce.</td>
+                            </tr>
+
+                            <!-- Fondos oscuros y neutros -->
+                            <tr>
+                                <td><code>.fondo-carbon</code></td>
+                                <td>Fondo carbon.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-gris-oscuro</code></td>
+                                <td>Fondo gris oscuro.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-negro</code></td>
+                                <td>Fondo negro.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-blanco</code></td>
+                                <td>Fondo blanco.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-blanco-calido</code></td>
+                                <td>Fondo blanco cálido.</td>
+                            </tr>
+
+                            <!-- Fondos mágicos y opcionales -->
+                            <tr>
+                                <td><code>.fondo-morado-magico</code></td>
+                                <td>Fondo morado mágico.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.fondo-azul-hielo</code></td>
+                                <td>Fondo azul hielo.</td>
+                            </tr>
+
+                            <!-- Fondos suaves y de soporte -->
+                            <tr>
+                                <td><code>.fondo-gris-claro</code></td>
+                                <td>Fondo gris claro.</td>
+                            </tr>
+
+                            <!-- Fondo transparente -->
+                            <tr>
+                                <td><code>.fondo-transparente</code></td>
+                                <td>Fondo transparente.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Posicionamiento y Márgenes -->
+            <section id="posicionamiento">
+                <h2 class="titulo-responsive">Posicionamiento y Márgenes</h2>
+                <p>Estas clases te permiten controlar el posicionamiento, los márgenes y los rellenos de los elementos
+                    de manera fácil y flexible.</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Tipos de posicionamiento -->
+                            <tr>
+                                <td><code>.pos-relativa</code></td>
+                                <td>Posicionamiento relativo.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.pos-absoluta</code></td>
+                                <td>Posicionamiento absoluto.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.pos-fija</code></td>
+                                <td>Posicionamiento fijo.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.pos-estatica</code></td>
+                                <td>Posicionamiento estático.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.pos-sticky</code></td>
+                                <td>Posicionamiento sticky.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.final-derecha</code></td>
+                                <td>Centra el contenido vertical y horizontalmente.</td>
+                            </tr>
+
+                            <!-- Coordenadas -->
+                            <tr>
+                                <td><code>.top-0</code></td>
+                                <td>Posiciona el elemento en la parte superior (0 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.top-1</code></td>
+                                <td>Posiciona el elemento en la parte superior (1 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.top-2</code></td>
+                                <td>Posiciona el elemento en la parte superior (2 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.bottom-0</code></td>
+                                <td>Posiciona el elemento en la parte inferior (0 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.bottom-1</code></td>
+                                <td>Posiciona el elemento en la parte inferior (1 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.bottom-2</code></td>
+                                <td>Posiciona el elemento en la parte inferior (2 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.left-0</code></td>
+                                <td>Posiciona el elemento a la izquierda (0 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.left-1</code></td>
+                                <td>Posiciona el elemento a la izquierda (1 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.left-2</code></td>
+                                <td>Posiciona el elemento a la izquierda (2 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.right-0</code></td>
+                                <td>Posiciona el elemento a la derecha (0 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.right-1</code></td>
+                                <td>Posiciona el elemento a la derecha (1 rem).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.right-2</code></td>
+                                <td>Posiciona el elemento a la derecha (2 rem).</td>
+                            </tr>
+
+                            <!-- Centrados -->
+                            <tr>
+                                <td><code>.centro-absoluto</code></td>
+                                <td>Centra el elemento tanto vertical como horizontalmente.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.centro-horizontal</code></td>
+                                <td>Centra el elemento horizontalmente.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.centro-vertical</code></td>
+                                <td>Centra el elemento verticalmente.</td>
+                            </tr>
+
+                            <!-- Z-index -->
+                            <tr>
+                                <td><code>.z-0</code></td>
+                                <td>Establece el z-index a 0.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.z-10</code></td>
+                                <td>Establece el z-index a 10.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.z-50</code></td>
+                                <td>Establece el z-index a 50.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.z-100</code></td>
+                                <td>Establece el z-index a 100.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.z-auto</code></td>
+                                <td>Establece el z-index a auto.</td>
+                            </tr>
+
+                            <!-- Márgenes y Padding -->
+                            <tr>
+                                <td><code>.margen-top-1</code></td>
+                                <td>Aplica un margen superior de 1 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.margen-top-2</code></td>
+                                <td>Aplica un margen superior de 2 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.margen-top-3</code></td>
+                                <td>Aplica un margen superior de 3 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.margen-top-4</code></td>
+                                <td>Aplica un margen superior de 4 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.margen-top-5</code></td>
+                                <td>Aplica un margen superior de 5 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.padding-top-1</code></td>
+                                <td>Aplica un padding superior de 1 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.padding-top-2</code></td>
+                                <td>Aplica un padding superior de 2 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.padding-top-3</code></td>
+                                <td>Aplica un padding superior de 3 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.padding-top-4</code></td>
+                                <td>Aplica un padding superior de 4 rem.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.padding-top-5</code></td>
+                                <td>Aplica un padding superior de 5 rem.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Sombras -->
+            <section id="sombras">
+                <h2 class="titulo-responsive">Sombras</h2>
+                <p>Estas clases te permiten agregar sombras a los elementos para mejorar la profundidad y el enfoque
+                    visual.</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Sombras XS, SM, MD, LG, XL -->
+                            <tr>
+                                <td><code>.sombra-xs</code></td>
+                                <td>Sombra pequeña con desplazamiento de 1px y difuminado suave.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.sombra-sm</code></td>
+                                <td>Sombra ligeramente más grande con desplazamiento de 2px.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.sombra-md</code></td>
+                                <td>Sombra de tamaño medio con desplazamiento de 4px.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.sombra-lg</code></td>
+                                <td>Sombra grande con desplazamiento de 8px, ideal para dar profundidad.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.sombra-xl</code></td>
+                                <td>Sombra extra grande con desplazamiento de 12px para un efecto notable.</td>
+                            </tr>
+
+                            <!-- Sombras mágicas y especiales -->
+                            <tr>
+                                <td><code>.sombra-magica</code></td>
+                                <td>Una sombra especial combinando morado mágico y dorado suave para un efecto místico.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>.sombra-dorada</code></td>
+                                <td>Sombra dorada sutil para un toque elegante y luminoso.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.sombra-verde</code></td>
+                                <td>Sombra suave en tono verde Loki, con un toque fresco.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.sombra-oscura</code></td>
+                                <td>Sombra profunda oscura, ideal para fondos oscuros y elementos destacados.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <!-- Visibilidad y Ocultación -->
+            <section id="visibilidad-ocultacion">
+                <h2 class="titulo-responsive">Visibilidad y Ocultación</h2>
+                <p>Estas clases te permiten controlar la visibilidad de los elementos en diferentes tamaños de pantalla,
+                    asegurando una interfaz responsiva.</p>
+
+                <div class="tabla-loki texto-responsive">
+                    <table class="tabla-loki">
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Clases Generales -->
+                            <tr>
+                                <td><code>.oculto</code></td>
+                                <td>Oculta el elemento en todos los tamaños de pantalla.</td>
+                            </tr>
+                            <tr>
+                                <td><code>.visible</code></td>
+                                <td>Muestra el elemento en todos los tamaños de pantalla.</td>
+                            </tr>
+
+                            <!-- Clases de Ocultación Responsiva -->
+                            <tr>
+                                <td><code>.oculto-p</code></td>
+                                <td>Oculta el elemento en pantallas pequeñas (p). Requiere los mixins de media queries.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>.oculto-m</code></td>
+                                <td>Oculta el elemento en pantallas medianas (m). Requiere los mixins de media queries.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>.oculto-g</code></td>
+                                <td>Oculta el elemento en pantallas grandes (g). Requiere los mixins de media queries.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>.oculto-xg</code></td>
+                                <td>Oculta el elemento en pantallas extra grandes (xg). Requiere los mixins de media
+                                    queries.</td>
+                            </tr>
+
+                            <!-- Clases para Mostrar Solo en Ciertos Tamaños -->
+                            <tr>
+                                <td><code>.solo-p</code></td>
+                                <td>Solo muestra el elemento en pantallas pequeñas (p).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.solo-m</code></td>
+                                <td>Solo muestra el elemento en pantallas medianas (m).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.solo-g</code></td>
+                                <td>Solo muestra el elemento en pantallas grandes (g).</td>
+                            </tr>
+                            <tr>
+                                <td><code>.solo-xg</code></td>
+                                <td>Solo muestra el elemento en pantallas extra grandes (xg).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Footer  -->
+    <footer class="text-center mt-12 p-6 text-sm text-black fila bg-gris-claro margen-top-1">
+        <div class="col-6">
+            <div class="fila-vertical">
+                <div class="logo-loki final-derecha"><img src="../img/logo.png" alt=""></div>
+                <div>
+                    <p>CREADO POR</p>
+                    <ul>
+                        <li>Victor Manuel Gonzalez Barrera</li>
+                        <li>Jasson Amílcar Sánchez Pérez</li>
+                        <li>Francisco Natanael Yanes Martínez</li>
+                        <li>Carlos Alejandro Barrientos Lapa</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <h5>"Inspirado en la astucia y el caos de Loki."</h5>
+            <p>Diseñado y construido con todo el amor del mundo por el equipo de Herramientas de Productividad.</p>
+            <p>LokiStyle V1.0</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

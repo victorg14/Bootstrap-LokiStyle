@@ -8,6 +8,11 @@
 .texto-lg     { font-size: 1.25rem; }  // 20px
 .texto-xl     { font-size: 1.5rem; }   // 24px
 .texto-xxl    { font-size: 2rem; }     // 32px
+.texto-responsive{font-size: clamp(12px, 2vw, 18px);} 
+.titulo-responsive{font-size: clamp(17px, 2vw, 35px);}
+
+
+
 
 // Pesos (grosor de fuente)
 .fuente-light   { font-weight: 300; }
@@ -38,3 +43,5 @@
 
 // Tipografías (si defines más en tipografia.scss)
 .fuente-midgard   { font-family: tipografia.$font-midgard; }
+
+

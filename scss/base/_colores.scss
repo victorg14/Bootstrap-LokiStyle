@@ -102,3 +102,7 @@ $blanco-calido:     #F7F7F7;
 
 .bg-blanco-calido { background-color: $blanco-calido; }
 .text-blanco-calido { color: $blanco-calido; }
+
+.color-fondo{
+    background: linear-gradient(145deg, #e0f7fa, #b2ebf2);
+}
