@@ -1091,24 +1091,24 @@ p {
 .sidebar-loki p {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(8px, 2vw, 20px);
 }
 .sidebar-loki ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 .sidebar-loki ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 2px;
 }
 .sidebar-loki ul li a {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2px;
   text-decoration: none;
   color: #ffffff;
   border-radius: 0.25rem;
   transition: background-color 0.2s, font-size 0.3s ease;
-  font-size: clamp(12px, 2vw, 18px);
+  font-size: clamp(8px, 2vw, 18px);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .sidebar-loki ul li a:hover {
@@ -1420,6 +1420,32 @@ p {
   .contenedor-responsive {
     max-width: 1200px;
     padding: 2.5rem;
+  }
+}
+
+.contenedor-texto {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+@media (min-width: 540px) {
+  .contenedor-texto {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor-texto {
+    max-width: 720px;
+  }
+}
+@media (min-width: 960px) {
+  .contenedor-texto {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1140px) {
+  .contenedor-texto {
+    max-width: 1140px;
   }
 }
 

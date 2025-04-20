@@ -214,3 +214,33 @@
     padding: 2.5rem;
   }
 }
+
+
+.contenedor-texto {
+  width: 100%;
+
+  
+  overflow: hidden;  
+  overflow-x: auto;
+
+  // Anchos máximos por breakpoint
+  @include mixins.respond(p) {
+    max-width: 540px;
+   
+  }
+
+  @include mixins.respond(m) {
+    max-width: 720px;
+    
+  }
+
+  @include mixins.respond(g) {
+    max-width: 960px; 
+    
+  }
+
+  @include mixins.respond(xg) {
+    max-width: 1140px; 
+    
+  }
+}
