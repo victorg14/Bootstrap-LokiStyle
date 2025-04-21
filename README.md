@@ -101,6 +101,7 @@ Consulta la documentación completa en:
 - **Victor Manuel Gonzalez Barrera**
 - **Carlos Alejandro Barrientos Lapa**
 
+
 ---
 
 ## 📌 Versión del proyecto
