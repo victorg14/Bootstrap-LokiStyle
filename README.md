@@ -25,6 +25,7 @@ Inspirada en el universo nórdico y el personaje Loki, la librería incorpora co
 | ![#112d0f](https://www.colorhexa.com/112d0f.png) | `#112d0f` | (17,45,15) | Ideal como color de **hover**, bordes, o elementos profundos (shadow, overlays) |
 | ![#d3b616](https://www.colorhexa.com/d3b616.png) | `#d3b616` | (211,182,22) | Color **secundario (dorado)** para **highlights**, íconos, bordes y textos importantes |
 | ![#2f352c](https://www.colorhexa.com/2f352c.png) | `#2f352c` | (47,53,44) | Color neutro para **fondos**, separadores o para un diseño sobrio entre secciones |
+| ![#2f352c](https://www.colorhexa.com/6c3483.png) | `#6C3483` | (108,52,131) | Color místico para detalles especiales, badges, o elementos mágicos del estilo Loki |
 
 
 ---
@@ -33,10 +34,14 @@ Inspirada en el universo nórdico y el personaje Loki, la librería incorpora co
 
 ### 1. Descarga
 
-Descarga el archivo CSS compilado desde la carpeta `/dist` o cópialo desde GitHub Pages:
+Descarga el archivo CSS compilado desde la carpeta `/scss` o copia el cdn:
 
 ```html
 <link rel="stylesheet" href="dist/lokistyle.css">
+```
+```cdn
+https://cdn.jsdelivr.net/gh/victorg14/Bootstrap-LokiStyle/scss/styleLoki.css
+
 ```
 ---
 ### 2. Uso básico
