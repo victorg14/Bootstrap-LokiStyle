@@ -99,6 +99,7 @@ Consulta la documentación completa en:
 
 - **Jasson Amílcar Sánchez Pérez**
 - **Victor Manuel Gonzalez Barrera**
+- **Carlos Alejandro Barrientos Lapa**
 
 ---
 
