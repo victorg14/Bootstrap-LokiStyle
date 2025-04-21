@@ -51,6 +51,10 @@ table {
   border-spacing: 0;
 }
 
+.color-primario {
+  background-color: #5E8335;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
