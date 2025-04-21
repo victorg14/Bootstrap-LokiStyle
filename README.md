@@ -35,6 +35,7 @@ Inspirada en el universo nórdico y el personaje Loki, la librería incorpora co
 ### 1. Descarga
 
 Descarga el archivo CSS compilado desde la carpeta `/scss` o copia el cdn:
+
 html
 ```html
 <link rel="stylesheet" href="scss/lokistyle.css">
@@ -98,8 +99,6 @@ Consulta la documentación completa en:
 
 - **Jasson Amílcar Sánchez Pérez**
 - **Victor Manuel Gonzalez Barrera**
-- **Francisco Natanael Yanes Martínez**
-- **Carlos Alejandro Barrientos Lapa**
 
 ---
 
