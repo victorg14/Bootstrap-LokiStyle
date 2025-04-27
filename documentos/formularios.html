@@ -7,7 +7,7 @@
     <title>Introduccion</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../scss/styleLoki.css">
+    <link rel="stylesheet" href="../scss/styleprueba.css">
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/victorg14/Bootstrap-LokiStyle/scss/styleLoki.css">
 
@@ -28,8 +28,7 @@
         <div class="col-5">
             <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="introduccion.html">Documentación</a></li>
-              
+                <li><a href="descripcion.html">Documentación</a></li>
                 <li><a href="componentes.html">Componentes</a></li>
 
             </ul>
@@ -80,7 +79,7 @@
                 <li><a href="breakpoints.html">Breakpoints</a></li>
                 <li><a href="contenedores.html">Contenedores</a></li>
                 <li><a href="grid.html">Grid</a></li>
-
+                <li><a href="utilidadades.html">Utilidades</a></li>
             </ul>
 
             <p><span>Componentes</span></p>
@@ -98,62 +97,95 @@
 
         </div>
 
-        <!-- contenido de la pajina-->
-        <div class="col-10 container-frost  p-5 text-black">
+        <!-- Contenido de la página -->
+        <div class="col-10 container-frost p-5 text-black">
 
-
-
-            <h1 class="text-center fondo-verde-loki p-2 borde-redondo titulo-responsive">Sistema de Grid LokiStyle</h1>
+            <h1 class="text-center fondo-verde-loki p-2 borde-redondo titulo-responsive">Formularios LokiStyle</h1>
 
             <p class="text-center margen-top-2">
-                Nuestro sistema de grillas (grid) te permite crear diseños responsivos de forma fácil, usando
-                filas (<code>.fila</code>) y columnas (<code>.col</code>).
+                Los formularios de LokiStyle combinan elegancia, poder mágico y funcionalidad.
+                Diseñados para capturar información con un estilo inspirado en Midgard.
             </p>
 
+            <!-- Estructura básica de formulario -->
             <div class="margen-top-5 sombra-verde fondo-blanco-calido p-3 borde-redondo contenedor-texto">
                 <h2 class="text-center fondo-dorado-loki p-2 borde-redondo titulo-responsive">Estructura Básica</h2>
 
-                <div class="contenedor-texto">
-                    <pre class=" p-2 borde-redondo white-text">
-                                &lt;div class="fila"&gt;
-                                    &lt;div class="col"&gt;Columna 1&lt;/div&gt;
-                                    &lt;div class="col"&gt;Columna 2&lt;/div&gt;
-                                &lt;/div&gt;
-                            </pre>
+                <div class="contenedor-texto margen-top-2">
+                    <pre class="p-2 borde-redondo">
+                        &lt;form class="formulario"&gt;
+                            &lt;h2&gt;Registro&lt;/h2&gt;
+                            
+                            &lt;div class="campo campo-con-borde"&gt;
+                            &lt;label for="nombre"&gt;Nombre&lt;/label&gt;
+                            &lt;input type="text" id="nombre" placeholder="Ingrese su nombre"&gt;
+                            &lt;/div&gt;
+                        
+                            &lt;div class="campo campo-con-borde"&gt;
+                            &lt;label for="email"&gt;Correo Electrónico&lt;/label&gt;
+                            &lt;input type="email" id="email" placeholder="ejemplo@correo.com"&gt;
+                            &lt;/div&gt;
+                        
+                            &lt;div class="campo campo-con-borde"&gt;
+                            &lt;label for="mensaje"&gt;Mensaje&lt;/label&gt;
+                            &lt;textarea id="mensaje" placeholder="Escribe tu mensaje..."&gt;&lt;/textarea&gt;
+                            &lt;/div&gt;
+                        
+                            &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+                        &lt;/form&gt;
+                    </pre>
                 </div>
             </div>
 
+            <!-- Ejemplo real de formulario -->
             <div class="margen-top-5">
-                <h2 class="text-center fondo-morado-magico p-2 borde-redondo white-text titulo-responsive">Ejemplos en
-                    Acción</h2>
+                <h2 class="text-center fondo-morado-magico p-2 borde-redondo titulo-responsive">Ejemplo Visual</h2>
 
-                <div class="fila margen-top-3 text-black">
-                    <div class="col fondo-verde-esmeralda p-3 borde-redondo sombra-xs">Columna 1</div>
-                    <div class="col fondo-dorado-suave p-3 borde-redondo sombra-xs">Columna 2</div>
-                    <div class="col fondo-azul-hielo p-3 borde-redondo sombra-xs">Columna 3</div>
-                </div>
+                <form class="formulario margen-top-4">
+                    <h2>Registro</h2>
 
-                <div class="fila margen-top-4">
-                    <div class="col fondo-bronce p-3 borde-redondo sombra-xs">Columna 1</div>
-                    <div class="col fondo-morado-magico p-3 borde-redondo sombra-xs">Columna 2</div>
-                </div>
+                    <div class="campo campo-con-borde">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+
+                    <div class="campo campo-con-borde">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="campo campo-con-borde">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
 
             </div>
 
+            <!-- ¿Cómo funcionan? -->
             <div class="margen-top-5 sombra-oscura fondo-blanco-calido p-3 borde-redondo">
-                <h2 class="text-center fondo-verde-loki p-2 borde-redondo titulo-responsive">¿Cómo funciona?</h2>
+                <h2 class="text-center fondo-verde-loki p-2 borde-redondo titulo-responsive">¿Cómo funcionan?</h2>
 
                 <ul class="pl-3 margen-top-2">
-                    <li class="margen-top-2"><strong>Fila (<code>.fila</code>)</strong>: Agrupa columnas. Es el
-                        contenedor padre.</li>
-                    <li class="margen-top-2"><strong>Columna (<code>.col</code>)</strong>: Cada columna ocupa el
-                        mismo espacio por defecto.</li>
-                    <li class="margen-top-2"><strong>Responsivo:</strong> Las columnas se adaptan al tamaño de
-                        la pantalla automáticamente.</li>
+                    <li class="margen-top-2"><strong>.formulario:</strong> Clase principal que estiliza el formulario
+                        completo (fondo, sombra, bordes).</li>
+                    <li class="margen-top-2"><strong>.campo:</strong> Agrupa de manera elegante cada etiqueta y su campo
+                        de entrada.</li>
+                    <li class="margen-top-2"><strong>.campo-con-borde:</strong> Aplica bordes de bronce para inputs,
+                        selects y textareas.</li>
+                    <li class="margen-top-2"><strong>Inputs, Textareas, Selects:</strong> Con cambios mágicos de color
+                        al enfocar o completar campos.</li>
+                    <li class="margen-top-2"><strong>Botón:</strong> Botón principal con animación y colores LokiStyle
+                        para enviar el formulario.</li>
+                    <li class="margen-top-2"><strong>Mensajes de error (.error):</strong> Estilo especial en morado
+                        mágico para mostrar errores.</li>
                 </ul>
             </div>
 
         </div>
+
 
     </div>
 
@@ -166,7 +198,7 @@
                     <p>CREADO POR</p>
                     <ul>
                         <li>Victor Manuel Gonzalez Barrera</li>
-                        <li>Jasson Amílcar Sánchez Pérez</li>                       
+                        <li>Jasson Amílcar Sánchez Pérez</li>
                         <li>Carlos Alejandro Barrientos Lapa</li>
                     </ul>
 
